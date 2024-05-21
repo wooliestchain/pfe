@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Home Page </h1>
+    {% if email %}
+    <p> Hello {{ email }}Vous êtes déjà connecté</p>
+    <a href="/logout">Deconnexion</a>
+    {% else %}
+    <p>Vous êtes connectés. Cliquez <a href="/login">ici</a> pour la page d'acceuil</p>
+    {% endif %}
+</body>
+</html>
