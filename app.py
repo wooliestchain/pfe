@@ -1,9 +1,11 @@
 import sqlalchemy
-from flask import Flask, render_template, request, redirect, url_for, session
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify
 from flask_sqlalchemy import SQLAlchemy
 import mysql.connector
 import bcrypt
 import folium
+from infojson import extract
+import json
 
 
 app = Flask('__name__')
@@ -54,13 +56,41 @@ def register():
         return redirect(url_for('login'))
     return render_template('register.html')
 
-@app.route("/map")
+# @app.route("/map")
+# def base():
+#     map = folium.Map(
+#         location=[10.54484, 12.6565]
+#     )
+#     map_html = map._repr_html_()
+#     return render_template('home.html', map_html=map_html)
+
+@app.route('/map')
 def base():
-    map = folium.Map(
-        location=[10.54484, 12.6565]
-    )
+    # Initialiser la carte
+    map = folium.Map(location=[36.86461188050044, 10.217478287058501], zoom_start=12)
+
+    # Lire le fichier JSON
+    with open('global.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Ajouter des marqueurs pour chaque point
+    for point in data:
+        folium.Marker(
+            location=[point['latitude'], point['longitude']],
+            popup=f"{point['secteur']}, {point['ville']}",
+            tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
+        ).add_to(map)
+
+    # Convertir la carte en HTML
     map_html = map._repr_html_()
     return render_template('home.html', map_html=map_html)
+
+@app.route('/dab')
+def index():
+    with open('global.json') as f:
+        data = json.load(f)
+
+    return render_template('dab.html', data=data)
 
 
 if __name__ == '__main__':

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau des Données</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tableau des Données</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>DAB Index</th>
+                <th>Longitude</th>
+                <th>Latitude</th>
+                <th>Densité (100 mètres)</th>
+                <th>Secteur</th>
+                <th>Ville</th>
+                <th>DAB Near</th>
+                <th>Magasins</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ data.dab_index }}</td>
+                <td>{{ data.longitude }}</td>
+                <td>{{ data.latitude }}</td>
+                <td>{{ data.densite_100_metter }}</td>
+                <td>{{ data.secteur }}</td>
+                <td>{{ data.ville }}</td>
+                <td>{{ data.dab_near }}</td>
+                <td>
+                    <ul>
+                        {% for magasin in data.magasin %}
+                            <li>{{ magasin.nom }} ({{ magasin.distance }} mètres)</li>
+                        {% endfor %}
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
