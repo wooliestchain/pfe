@@ -5,13 +5,24 @@
     <title>Home Page</title>
 
     <style>
-        /* Styles for the map section */
-        #map_section {
-            width: 50%;  /* 50% of the page width */
-            margin: 20px auto 20px 20px;  /* 20px from the top, auto for left/right centering, 20px from the bottom, 20px from the left */
+        /* Styles for the DAB count section */
+        #dab_count_section {
+            width: 45%;  /* 45% of the page width */
+            margin: 20px;  /* 20px margin around the section */
             padding: 10px;  /* Padding inside the section */
             border: 1px solid #ccc;  /* Optional: Border to better visualize the section */
             box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optional: Box shadow for a nicer appearance */
+            float: right;  /* Align the DAB count section to the right */
+        }
+
+        /* Styles for the map section */
+        #map_section {
+            width: 45%;  /* 45% of the page width */
+            margin: 20px;  /* 20px margin around the section */
+            padding: 10px;  /* Padding inside the section */
+            border: 1px solid #ccc;  /* Optional: Border to better visualize the section */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optional: Box shadow for a nicer appearance */
+            float: left;  /* Align the map section to the left */
         }
 
         #map_frame {
@@ -28,12 +39,12 @@
     </style>
 </head>
 <body>
-    <h1>Home Page </h1>
+    <h1>Home Page</h1>
     {% if email %}
-    <p> Hello {{ email }}Vous êtes déjà connecté</p>
-    <a href="/logout">Deconnexion</a>
+    <p>Hello {{ email }} Vous êtes déjà connecté</p>
+    <a href="/logout">Déconnexion</a>
     {% else %}
-    <p>Vous êtes connectés. Cliquez <a href="/login">ici</a> pour la page d'acceuil</p>
+    <p>Vous êtes connectés. Cliquez <a href="/login">ici</a> pour la page d'accueil</p>
     {% endif %}
 
     <section id="map_section">
@@ -42,6 +53,15 @@
             {{ map_html | safe }}
         </div>
         {% endif %}
+    </section>
+
+    <section id="dab_count_section">
+        <h2>Nombre de DAB par Ville</h2>
+        <ul>
+            {% for ville, count in dab_count_by_city.items() %}
+            <li>{{ ville }}: {{ count }}</li>
+            {% endfor %}
+        </ul>
     </section>
 </body>
 </html>

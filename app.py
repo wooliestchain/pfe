@@ -6,6 +6,12 @@ import bcrypt
 import folium
 from infojson import extract
 import json
+from collections import defaultdict
+
+
+def load_data():
+    with open('global.json', 'r', encoding='utf-8') as f:
+        return json.load(f)
 
 
 app = Flask('__name__')
@@ -65,13 +71,11 @@ def register():
 #     return render_template('home.html', map_html=map_html)
 
 @app.route('/map')
-def base():
+def dab():
+    data = load_data()
+
     # Initialiser la carte
     map = folium.Map(location=[36.86461188050044, 10.217478287058501], zoom_start=12)
-
-    # Lire le fichier JSON
-    with open('global.json', 'r', encoding='utf-8') as f:
-        data = json.load(f)
 
     # Ajouter des marqueurs pour chaque point
     for point in data:
@@ -83,7 +87,15 @@ def base():
 
     # Convertir la carte en HTML
     map_html = map._repr_html_()
-    return render_template('home.html', map_html=map_html)
+
+    # Compter le nombre de DAB par ville
+    dab_count_by_city = defaultdict(int)
+    for point in data:
+        dab_count_by_city[point['ville']] += 1
+
+    return render_template('home.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
+
+
 
 @app.route('/dab')
 def index():
