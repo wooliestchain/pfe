@@ -59,9 +59,8 @@ def base():
     map = folium.Map(
         location=[10.54484, 12.6565]
     )
-    return map._repr_html_()
-
-
+    map_html = map._repr_html_()
+    return render_template('home.html', map_html=map_html)
 
 
 if __name__ == '__main__':
