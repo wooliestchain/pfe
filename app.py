@@ -93,16 +93,9 @@ def dab():
     for point in data:
         dab_count_by_city[point['ville']] += 1
 
-    return render_template('home.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
+    return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
 
 
-
-@app.route('/dab')
-def index():
-    with open('global.json') as f:
-        data = json.load(f)
-
-    return render_template('dab.html', data=data)
 
 
 if __name__ == '__main__':
