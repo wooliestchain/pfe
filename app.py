@@ -101,6 +101,32 @@ def dab():
     return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
 
 
+@app.route('/city/<ville>')
+def city(ville):
+    data = load_data()
+    city_data = [point for point in data if point['ville'].lower() == ville.lower()]
+
+    page = request.args.get('page', 1, type=int)
+    per_page = 10
+    total = len(city_data)
+    start = (page - 1) * per_page
+    end = start + per_page
+    paginated_data = city_data[start:end]
+
+    map = folium.Map(location=[city_data[0]['latitude'], city_data[0]['longitude']], zoom_start=12)
+    for point in paginated_data:
+        folium.Marker(
+            location=[point['latitude'], point['longitude']],
+            popup=f"{point['secteur']}, {point['ville']}",
+            tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
+        ).add_to(map)
+
+    map_html = map._repr_html_()
+
+    return render_template('city.html', map_html=map_html, ville=ville, city_data=paginated_data, page=page, total=total, per_page=per_page)
+
+
+
 
 
 if __name__ == '__main__':
