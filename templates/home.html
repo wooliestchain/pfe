@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <title>Home Page</title>
 
+    <style>
+        nav {
+            background-color: #333; /* Couleur de fond de la barre de navigation */
+            padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+        }
+
+        nav ul {
+            list-style-type: none; /* Supprime les puces de la liste */
+            margin: 0; /* Supprime les marges de la liste */
+            padding: 0; /* Supprime les espacements internes de la liste */
+        }
+
+        nav ul li {
+            display: inline; /* Affiche les éléments de la liste en ligne */
+        }
+
+        nav ul li a {
+            color: white; /* Couleur du texte des liens */
+            text-decoration: none; /* Supprime la décoration des liens */
+            padding: 10px 20px; /* Espacement intérieur des liens */
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Couleur de fond au survol */
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <h1>Home Page</h1>
     {% if email %}
     <p>Hello {{ email }} Vous êtes déjà connecté</p>

@@ -33,14 +33,42 @@
 
         /* Reste du style inchangé */
         /* Styles for the DAB count section */
-        #dab_count_section {
-            width: 45%;  /* 45% de la largeur de la page */
-            margin: 20px;  /* Marge de 20px autour de la section */
-            padding: 10px;  /* Remplissage à l'intérieur de la section */
-            border: 1px solid #ccc;  /* Optionnel : Bordure pour mieux visualiser la section */
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optionnel : Ombre pour une meilleure apparence */
-            float: right;  /* Aligner la section de compte DAB à droite */
-        }
+            #dab_count_section {
+        width: 45%;  /* 45% de la largeur de la page */
+        margin: 20px;  /* Marge de 20px autour de la section */
+        padding: 10px;  /* Remplissage à l'intérieur de la section */
+        border: 1px solid #ccc;  /* Optionnel : Bordure pour mieux visualiser la section */
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optionnel : Ombre pour une meilleure apparence */
+        float: right;  /* Aligner la section de compte DAB à droite */
+        font-family: Arial, sans-serif; /* Police de caractères */
+    }
+
+    #dab_count_section ul {
+        list-style: none; /* Supprimer les puces de la liste */
+        padding: 0; /* Supprimer les marges intérieures de la liste */
+    }
+
+    #dab_count_section li {
+        margin-bottom: 10px; /* Espacement entre chaque élément de la liste */
+    }
+
+    #dab_count_section li a {
+        text-decoration: none; /* Supprimer la décoration des liens */
+        color: #333; /* Couleur du texte des liens */
+        font-weight: bold; /* Gras pour le lien */
+        font-family: Arial, sans-serif; /* Police de caractères */
+    }
+
+    #dab_count_section li a:hover {
+        color: #555; /* Changement de couleur au survol */
+    }
+
+    #dab_count_section li span {
+        margin-left: 10px; /* Espacement entre le nom de la ville et le nombre de DAB */
+        font-family: Arial, sans-serif; /* Police de caractères */
+        font-weight: bold; /* Gras pour le nombre de DAB */
+    }
+
 
         /* Styles for the map section */
         #map_section {
@@ -69,7 +97,7 @@
 <body>
     <nav>
         <ul>
-            <li><a href="#">Accueil</a></li>
+            <li><a href="{{ url_for ('home') }}">Accueil</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
@@ -87,7 +115,7 @@
         <h2>Nombre de DAB par Ville</h2>
         <ul>
             {% for ville, count in dab_count_by_city.items() %}
-            <li>{{ ville }}: {{ count }}</li>
+            <li><a href="{{ url_for('city', ville=ville) }}">{{ ville }}</a>: {{ count }}</li>
             {% endfor %}
         </ul>
     </section>

@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DAB in {{ ville }}</title>
     <style>
+
+        nav {
+            background-color: #333; /* Couleur de fond de la barre de navigation */
+            padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+        }
+
+        nav ul {
+            list-style-type: none; /* Supprime les puces de la liste */
+            margin: 0; /* Supprime les marges de la liste */
+            padding: 0; /* Supprime les espacements internes de la liste */
+        }
+
+        nav ul li {
+            display: inline; /* Affiche les éléments de la liste en ligne */
+        }
+
+        nav ul li a {
+            color: white; /* Couleur du texte des liens */
+            text-decoration: none; /* Supprime la décoration des liens */
+            padding: 10px 20px; /* Espacement intérieur des liens */
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Couleur de fond au survol */
+        }
+
+
         .container {
             display: flex;
             justify-content: space-between;
@@ -46,6 +73,13 @@
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <h1>DAB in {{ ville }}</h1>
     <div class="container">
         <div id="map_frame">
@@ -53,6 +87,10 @@
         </div>
         <div class="data-container">
             {% for point in city_data %}
+            <div class="data-row">
+                <a href="{{ url_for('dab_details', dab_index=point.dab_index) }}"><div class="data-label">Indice:</div></a>
+                <div class="data-value">{{ point['dab_index'] }}</div></a>
+            </div>
             <div class="data-row">
                 <div class="data-label">Secteur:</div>
                 <div class="data-value">{{ point['secteur'] }}</div>

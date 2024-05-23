@@ -7,7 +7,7 @@ import folium
 from infojson import extract
 import json
 from collections import defaultdict
-
+import map
 #Charger le fichier global.json
 def load_data():
     with open('global.json', 'r', encoding='utf-8') as f:
@@ -124,6 +124,24 @@ def city(ville):
     map_html = map._repr_html_()
 
     return render_template('city.html', map_html=map_html, ville=ville, city_data=paginated_data, page=page, total=total, per_page=per_page)
+
+@app.route('/dab/<int:dab_index>')
+def dab_details(dab_index):
+    data = load_data()
+    dab_data = next((item for item in data if item["dab_index"] == dab_index), None)
+    if not dab_data:
+        return "DAB not found", 404
+
+    # Créer une carte avec un marqueur pour le DAB sélectionné
+    map = folium.Map(location=[dab_data['latitude'], dab_data['longitude']], zoom_start=15)
+    folium.Marker(
+        location=[dab_data['latitude'], dab_data['longitude']],
+        popup=f"{dab_data['secteur']}, {dab_data['ville']}",
+        tooltip=f"Densité: {dab_data['densite_100_metter']}, DAB Near: {dab_data['dab_near']}"
+    ).add_to(map)
+    map_html = map._repr_html_()
+
+    return render_template('dab.html', gab_data=dab_data, map_html=map_html)
 
 
 
