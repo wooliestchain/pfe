@@ -3,42 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <title>Carte</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ajout du lien vers la feuille de style externe -->
     <style>
+                /* Styles for the navigation bar */
+        nav {
+            background-color: #333; /* Couleur de fond de la barre de navigation */
+            padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+        }
+
+        nav ul {
+            list-style-type: none; /* Supprime les puces de la liste */
+            margin: 0; /* Supprime les marges de la liste */
+            padding: 0; /* Supprime les espacements internes de la liste */
+        }
+
+        nav ul li {
+            display: inline; /* Affiche les éléments de la liste en ligne */
+        }
+
+        nav ul li a {
+            color: white; /* Couleur du texte des liens */
+            text-decoration: none; /* Supprime la décoration des liens */
+            padding: 10px 20px; /* Espacement intérieur des liens */
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Couleur de fond au survol */
+        }
+
+        /* Reste du style inchangé */
         /* Styles for the DAB count section */
         #dab_count_section {
-            width: 45%;  /* 45% of the page width */
-            margin: 20px;  /* 20px margin around the section */
-            padding: 10px;  /* Padding inside the section */
-            border: 1px solid #ccc;  /* Optional: Border to better visualize the section */
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optional: Box shadow for a nicer appearance */
-            float: right;  /* Align the DAB count section to the right */
+            width: 45%;  /* 45% de la largeur de la page */
+            margin: 20px;  /* Marge de 20px autour de la section */
+            padding: 10px;  /* Remplissage à l'intérieur de la section */
+            border: 1px solid #ccc;  /* Optionnel : Bordure pour mieux visualiser la section */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optionnel : Ombre pour une meilleure apparence */
+            float: right;  /* Aligner la section de compte DAB à droite */
         }
 
         /* Styles for the map section */
         #map_section {
-            width: 45%;  /* 45% of the page width */
-            margin: 20px;  /* 20px margin around the section */
-            padding: 10px;  /* Padding inside the section */
-            border: 1px solid #ccc;  /* Optional: Border to better visualize the section */
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optional: Box shadow for a nicer appearance */
-            float: left;  /* Align the map section to the left */
+            width: 45%;  /* 45% de la largeur de la page */
+            margin: 20px;  /* Marge de 20px autour de la section */
+            padding: 10px;  /* Remplissage à l'intérieur de la section */
+            border: 1px solid #ccc;  /* Optionnel : Bordure pour mieux visualiser la section */
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);  /* Optionnel : Ombre pour une meilleure apparence */
+            float: left;  /* Aligner la section de la carte à gauche */
         }
 
         #map_frame {
             width: 100%;
-            height: 400px;  /* Set a fixed height for the map */
+            height: 400px;  /* Définir une hauteur fixe pour la carte */
         }
 
-        /* Ensuring the map iframe fits within the div */
+        /* Assurer que l'iframe de la carte s'adapte dans la div */
         #map_frame iframe {
             width: 100%;
             height: 100%;
             border: none;
         }
+
     </style>
 </head>
 <body>
-  <section id="map_section">
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="map_section">
         {% if map_html %}
         <div id="map_frame">
             {{ map_html | safe }}

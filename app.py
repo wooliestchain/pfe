@@ -8,7 +8,7 @@ from infojson import extract
 import json
 from collections import defaultdict
 
-
+#Charger le fichier global.json
 def load_data():
     with open('global.json', 'r', encoding='utf-8') as f:
         return json.load(f)
@@ -17,6 +17,7 @@ def load_data():
 app = Flask('__name__')
 app.secret_key = 'your-secret-key'
 
+#Connexion à la base de données
 conn = mysql.connector.connect(
     host="localhost",
     database="pfe",
@@ -26,6 +27,7 @@ conn = mysql.connector.connect(
 cur = conn.cursor()
 #SQL CONNECTION
 
+#Page Home
 @app.route('/')
 def home():
     if 'email' in session:
@@ -33,10 +35,11 @@ def home():
     else:
         return render_template('home.html')
 
-
+#Page Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
+        #On récupère les informations rentrés dans le formualire
         email = request.form['email']
         pwd = request.form['password']
         cur.execute(f"select email, password from users where email = '{email}'")
@@ -48,6 +51,7 @@ def login():
             return render_template('login.html', error='Invalid username or password')
     return render_template('login.html')
 
+#Route pour s'inscrire
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
@@ -70,6 +74,7 @@ def register():
 #     map_html = map._repr_html_()
 #     return render_template('home.html', map_html=map_html)
 
+#Route pour afficher la carte et marquer chaque point
 @app.route('/map')
 def dab():
     data = load_data()

@@ -4,54 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tableau des Données</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Ajout du lien vers la feuille de style externe -->
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
+
+         nav {
+            background-color: #333; /* Couleur de fond de la barre de navigation */
+            padding: 10px 0; /* Espacement intérieur de la barre de navigation */
         }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
+
+        nav ul {
+            list-style-type: none; /* Supprime les puces de la liste */
+            margin: 0; /* Supprime les marges de la liste */
+            padding: 0; /* Supprime les espacements internes de la liste */
         }
-        th {
-            background-color: #f2f2f2;
+
+        nav ul li {
+            display: inline; /* Affiche les éléments de la liste en ligne */
         }
+
+        nav ul li a {
+            color: white; /* Couleur du texte des liens */
+            text-decoration: none; /* Supprime la décoration des liens */
+            padding: 10px 20px; /* Espacement intérieur des liens */
+        }
+
+        nav ul li a:hover {
+            background-color: #555; /* Couleur de fond au survol */
+        }
+
+                /* Styles for the data container */
+        .data-container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Styles for data rows */
+        .data-row {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        /* Styles for data labels */
+        .data-label {
+            flex: 1;
+            font-weight: bold;
+        }
+
+        /* Styles for data values */
+        .data-value {
+            flex: 2;
+        }
+
     </style>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
     <h1>Tableau des Données</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>DAB Index</th>
-                <th>Longitude</th>
-                <th>Latitude</th>
-                <th>Densité (100 mètres)</th>
-                <th>Secteur</th>
-                <th>Ville</th>
-                <th>DAB Near</th>
-                <th>Magasins</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>{{ data.dab_index }}</td>
-                <td>{{ data.longitude }}</td>
-                <td>{{ data.latitude }}</td>
-                <td>{{ data.densite_100_metter }}</td>
-                <td>{{ data.secteur }}</td>
-                <td>{{ data.ville }}</td>
-                <td>{{ data.dab_near }}</td>
-                <td>
-                    <ul>
-                        {% for magasin in data.magasin %}
-                            <li>{{ magasin.nom }} ({{ magasin.distance }} mètres)</li>
-                        {% endfor %}
-                    </ul>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="data-container">
+        <div class="data-row">
+            <div class="data-label">DAB Index:</div>
+            <div class="data-value">{{ data.dab_index }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Longitude:</div>
+            <div class="data-value">{{ data.longitude }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Latitude:</div>
+            <div class="data-value">{{ data.latitude }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Densité (100 mètres):</div>
+            <div class="data-value">{{ data.densite_100_metter }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Secteur:</div>
+            <div class="data-value">{{ data.secteur }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Ville:</div>
+            <div class="data-value">{{ data.ville }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">DAB Near:</div>
+            <div class="data-value">{{ data.dab_near }}</div>
+        </div>
+        <div class="data-row">
+            <div class="data-label">Magasins:</div>
+            <div class="data-value">
+                <ul>
+                    {% for magasin in data.magasin %}
+                        <li>{{ magasin.nom }} ({{ magasin.distance }} mètres)</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
