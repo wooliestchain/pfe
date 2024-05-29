@@ -1322,7 +1322,9 @@
               "nom": "Magasin Général Monastir",
               "distance": 800
           }
-        ]
+        ],
+        "efficacite": 0.3650533174,
+        "distance_mean": 0.375
       },
       {
         "dab_index": 59,
@@ -1345,6 +1347,8 @@
               "nom": "Monoprix Monastir",
               "distance": 230
           }
-        ]
+        ],
+        "efficacite": 0.3503310987,
+        "distance_mean": 0.1986111111
       }
   ]
