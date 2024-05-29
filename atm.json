@@ -916,7 +916,9 @@
             "nom": "null",
             "distance": 0
           }
-        ]
+        ],
+        "efficacite": 0.3038824913,
+        "distance_mean": 0.0
       },
       {
         "dab_index": 41,
@@ -931,7 +933,9 @@
             "nom": "Magasin Général Rades",
             "distance": 50
           }
-        ]
+        ],
+        "efficacite": 0.4549045254,
+        "distance_mean": 0.0208333333
       },
       {
         "dab_index": 42,
@@ -946,7 +950,9 @@
             "nom": "Magasin Général Ennakhil",
             "distance": 1300
           }
-        ]
+        ],
+        "efficacite": 0.2278455701,
+        "distance_mean": 0.5416666667
       },
       {
         "dab_index": 43,
@@ -969,7 +975,9 @@
             "nom": "Monoprix La Marsa Plage",
             "distance": 450
           }
-        ]
+        ],
+        "efficacite": 0.4022586985,
+        "distance_mean": 0.1052777778
       },
       {
         "dab_index": 44,
@@ -988,7 +996,9 @@
               "nom": "Carrefour Market",
               "distance": 500
           }
-        ]
+        ],
+        "efficacite": 0.3055995574,
+        "distance_mean": 0.1666666667
       },
       {
         "dab_index": 45,
@@ -1011,7 +1021,9 @@
               "nom": "Carrefour Trocadéro",
               "distance": 1300
           }
-        ]
+        ],
+        "efficacite": 0.234024325,
+        "distance_mean": 0.4722222222
       },
       {
         "dab_index": 46,
@@ -1030,7 +1042,9 @@
               "nom": "Magasin Général Corniche",
               "distance": 1400
           }
-        ]
+        ],
+        "efficacite": 0.3430521028,
+        "distance_mean": 0.4270833333
       },
       {
         "dab_index": 47,
@@ -1057,7 +1071,9 @@
               "nom": "Carrefour Trocadéro",
               "distance": 600
           }
-        ]
+        ],
+        "efficacite": 0.364927089,
+        "distance_mean": 0.3177083333
       },
       {
         "dab_index": 48,
@@ -1084,7 +1100,9 @@
               "nom": "Carrefour Express Khézama",
               "distance": 1000
           }
-        ]
+        ],
+        "efficacite": 0.2682517268,
+        "distance_mean": 0.4364583333
       },
       {
         "dab_index": 49,
@@ -1115,7 +1133,9 @@
               "nom": "Magasin Général Corniche",
               "distance": 1700
           }
-        ]
+        ],
+        "efficacite": 0.3966391781,
+        "distance_mean": 0.4041666667
       },
       {
         "dab_index": 50,
@@ -1142,7 +1162,9 @@
               "nom": "Aziza",
               "distance": 650
           }
-        ]
+        ],
+        "efficacite": 0.3159687556,
+        "distance_mean": 0.3125
       },
       {
         "dab_index": 51,
@@ -1157,7 +1179,9 @@
             "nom": "Aziza",
             "distance": 550
           }
-        ]
+        ],
+        "efficacite": 0.3097100602,
+        "distance_mean": 0.2291666667
       },
       {
         "dab_index": 52,
@@ -1172,7 +1196,9 @@
             "nom": "Carrefour",
             "distance": 1300
           }
-        ]
+        ],
+        "efficacite": 0.1972100706,
+        "distance_mean": 0.5416666667
       },
       {
         "dab_index": 53,
