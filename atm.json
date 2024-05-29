@@ -1213,7 +1213,9 @@
             "nom": "Géant Market Sfax",
             "distance": 350
           }
-        ]
+        ],
+        "efficacite": 0.3956447086,
+        "distance_mean": 0.1458333333
       },
       {
         "dab_index": 54,
@@ -1236,7 +1238,9 @@
               "nom": "Aziza",
               "distance": 1400
           }
-        ]
+        ],
+        "efficacite": 0.2963293003,
+        "distance_mean": 0.3020833333
       },
       {
         "dab_index": 55,
@@ -1255,7 +1259,9 @@
               "nom": "Monorprix Sfax",
               "distance": 1400
           }
-        ]
+        ],
+        "efficacite": 0.4651977496,
+        "distance_mean": 0.4166666667
       },
       {
         "dab_index": 56,
@@ -1270,7 +1276,9 @@
             "nom": "Monorprix Sfax Centre",
             "distance": 1800
           }
-        ]
+        ],
+        "efficacite": 0.356745967,
+        "distance_mean": 0.75
       },
       {
         "dab_index": 57,
@@ -1285,7 +1293,9 @@
             "nom": "Carrefour Market",
             "distance": 600
           }
-        ]
+        ],
+        "efficacite": 0.2217016892,
+        "distance_mean": 0.25
       },
       {
         "dab_index": 58,
