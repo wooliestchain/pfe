@@ -112,9 +112,6 @@
             <li class="logout"><a href="{{ url_for('logout') }}">Déconnexion</a></li>
         </ul>
     </nav>
-    {% if email %}
-    <p>Hello {{ email }} Vous êtes déjà connecté</p>
-    {% endif %}
 
     <section id="map_section">
         {% if map_html %}
@@ -132,5 +129,8 @@
             {% endfor %}
         </ul>
     </section>
+    {% if email %}
+    <p>Hello {{ email }} Vous êtes déjà connecté</p>
+    {% endif %}
 </body>
 </html>
