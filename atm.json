@@ -666,7 +666,9 @@
           "nom": "Magasin Général Proxi Megrine",
           "distance": 1000
         }
-      ]
+      ],
+      "efficacite": 0.3142212662,
+      "distance_mean": 0.4166666667
     },
     {
       "dab_index": 31,
@@ -697,7 +699,9 @@
             "nom": "Carrefour Market",
             "distance": 1900
         }
-      ]
+      ],
+      "efficacite": 0.123126101,
+      "distance_mean": 0.6666666667
     },
     {
         "dab_index": 32,
@@ -728,7 +732,9 @@
             "nom": "Carrefour Express",
             "distance": 1000
           }
-        ]
+        ],
+        "efficacite": 0.3742740615,
+        "distance_mean": 0.3541666667
       },
       {
         "dab_index": 33,
@@ -747,7 +753,9 @@
             "nom": "Monoprix Soukra Square",
             "distance": 2000
           }
-        ]
+        ],
+        "efficacite": 0.2131295702,
+        "distance_mean": 0.5104166667
       },
       {
         "dab_index": 34,
@@ -778,7 +786,9 @@
             "nom": "Monoprix El Mourouj 1",
             "distance": 900
           }
-        ]
+        ],
+        "efficacite": 0.4529318941,
+        "distance_mean": 0.325
       },
       {
         "dab_index": 35,
@@ -797,7 +807,9 @@
             "nom": "Magazin Aziza",
             "distance": 700
           }
-        ]
+        ],
+        "efficacite": 0.1747497999,
+        "distance_mean": 0.5416666667
       },
       {
         "dab_index": 36,
@@ -824,7 +836,9 @@
             "nom": "Monoprix Tunis Lafayette",
             "distance": 1600
           }
-        ]
+        ],
+        "efficacite": 0.4945510416,
+        "distance_mean": 0.421875
       },
       {
         "dab_index": 37,
@@ -839,7 +853,9 @@
             "nom": "Ben Yaghlane Lac 2",
             "distance": 650
           }
-        ]
+        ],
+        "efficacite": 0.3022927677,
+        "distance_mean": 0.2708333333
       },
       {
         "dab_index": 38,
@@ -866,7 +882,9 @@
             "nom": "Monoprix Menzah 1 Saadi",
             "distance": 900
           }
-        ]
+        ],
+        "efficacite": 0.3382987867,
+        "distance_mean": 0.5885416667
       },
       {
         "dab_index": 39,
@@ -881,7 +899,9 @@
             "nom": "Magasin Général",
             "distance": 1000
           }
-        ]
+        ],
+        "efficacite": 0.2726737763,
+        "distance_mean": 0.4166666667
       },
       {
         "dab_index": 40,
