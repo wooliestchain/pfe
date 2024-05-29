@@ -37,12 +37,12 @@
             <li><a href="{{ url_for ('home') }}">Accueil</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('logout') }}">Déconnexion</a></li>
         </ul>
     </nav>
     <h1>Home Page</h1>
     {% if email %}
     <p>Hello {{ email }} Vous êtes déjà connecté</p>
-    <a href="/logout">Déconnexion</a>
     {% else %}
     <p>Vous êtes connectés. Cliquez <a href="/login">ici</a> pour la page d'accueil</p>
     {% endif %}

@@ -167,7 +167,10 @@ def dab_details(dab_index):
 
     return render_template('dab.html', gab_data=dab_data, map_html=map_html)
 
-
+@app.route('/logout')
+def logout():
+    session.pop('email', None)
+    return redirect(url_for('login'))
 
 
 
