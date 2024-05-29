@@ -7,6 +7,7 @@ import folium
 from infojson import extract
 import json
 from collections import defaultdict
+import datetime
 import map
 #Charger le fichier global.json
 def load_data():
@@ -39,17 +40,40 @@ def home():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        #On récupère les informations rentrés dans le formualire
+        # On récupère les informations rentrées dans le formulaire
         email = request.form['email']
         pwd = request.form['password']
-        cur.execute(f"select email, password from users where email = '{email}'")
+
+        # Requête pour vérifier l'email et le mot de passe, ainsi que l'existence d'un jeton valide
+        query = """
+        SELECT u.user_id, u.email, u.password
+        FROM users u
+        JOIN token t ON u.user_id = t.user_id
+        WHERE u.email = %s AND t.token_id IS NOT NULL
+        """
+        cur.execute(query, (email,))
         user = cur.fetchone()
-        if user and bcrypt.checkpw(pwd.encode('utf-8'), user[1].encode('utf-8')):
-            session['email'] = user[0]
+
+        # Si l'utilisateur existe et que le mot de passe est correct
+        if user and bcrypt.checkpw(pwd.encode('utf-8'), user[2].encode('utf-8')):
+            session['email'] = user[1]
+
+            # Insertion dans la table log
+            log_query = """
+                        INSERT INTO log_entry (email, date, time)
+                        VALUES (%s, %s, %s)
+                        """
+            current_date = datetime.datetime.now().date()
+            current_time = datetime.datetime.now().time()
+            cur.execute(log_query, (user[1], current_date, current_time))
+            conn.commit()
+
             return redirect(url_for('home'))
         else:
-            return render_template('login.html', error='Invalid username or password')
+            return render_template('login.html', error='Invalid username or password or no valid token')
+
     return render_template('login.html')
+
 
 #Route pour s'inscrire
 @app.route('/register', methods=['GET', 'POST'])
