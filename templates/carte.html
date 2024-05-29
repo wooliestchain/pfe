@@ -9,12 +9,15 @@
         nav {
             background-color: #333; /* Couleur de fond de la barre de navigation */
             padding: 10px 0; /* Espacement intérieur de la barre de navigation */
+            display: flex; /* Utilisation de flexbox pour aligner les éléments */
+            justify-content: space-between; /* Distribution des éléments */
         }
 
         nav ul {
             list-style-type: none; /* Supprime les puces de la liste */
             margin: 0; /* Supprime les marges de la liste */
             padding: 0; /* Supprime les espacements internes de la liste */
+            display: flex; /* Utilisation de flexbox pour les éléments de la liste */
         }
 
         nav ul li {
@@ -29,6 +32,10 @@
 
         nav ul li a:hover {
             background-color: #555; /* Couleur de fond au survol */
+        }
+
+        .logout {
+            margin-left: auto; /* Envoi l'élément à l'extrémité droite */
         }
 
         /* Reste du style inchangé */
@@ -100,6 +107,9 @@
             <li><a href="{{ url_for ('home') }}">Accueil</a></li>
             <li><a href="#">À propos</a></li>
             <li><a href="#">Contact</a></li>
+        </ul>
+        <ul>
+            <li class="logout"><a href="{{ url_for('logout') }}">Déconnexion</a></li>
         </ul>
     </nav>
 

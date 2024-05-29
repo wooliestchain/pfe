@@ -101,28 +101,31 @@ def register():
 #Route pour afficher la carte et marquer chaque point
 @app.route('/map')
 def dab():
-    data = load_data()
+    if 'email' in session:
+        data = load_data()
 
-    # Initialiser la carte
-    map = folium.Map(location=[36.86461188050044, 10.217478287058501], zoom_start=12)
+        # Initialiser la carte
+        map = folium.Map(location=[36.86461188050044, 10.217478287058501], zoom_start=12)
 
-    # Ajouter des marqueurs pour chaque point
-    for point in data:
-        folium.Marker(
-            location=[point['latitude'], point['longitude']],
-            popup=f"{point['secteur']}, {point['ville']}",
-            tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
-        ).add_to(map)
+        # Ajouter des marqueurs pour chaque point
+        for point in data:
+            folium.Marker(
+                location=[point['latitude'], point['longitude']],
+                popup=f"{point['secteur']}, {point['ville']}",
+                tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
+            ).add_to(map)
 
-    # Convertir la carte en HTML
-    map_html = map._repr_html_()
+        # Convertir la carte en HTML
+        map_html = map._repr_html_()
 
-    # Compter le nombre de DAB par ville
-    dab_count_by_city = defaultdict(int)
-    for point in data:
-        dab_count_by_city[point['ville']] += 1
+        # Compter le nombre de DAB par ville
+        dab_count_by_city = defaultdict(int)
+        for point in data:
+            dab_count_by_city[point['ville']] += 1
 
-    return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
+        return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
+    else:
+        return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
 
 
 @app.route('/city/<ville>')
