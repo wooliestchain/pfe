@@ -24,7 +24,9 @@
             "nom": "Magasin Général Borj Louzir",
             "distance": 1800
         }
-      ]
+      ],
+      "efficacite": 0.4560071131,
+      "distance_mean": 0.5
     },
     {
       "dab_index": 2,
@@ -55,7 +57,9 @@
             "nom": "Aziza",
             "distance": 1400
         }
-      ]
+      ],
+      "efficacite": 0.321490742,
+      "distance_mean": 0.3680833333
     },
     {
       "dab_index": 3,
@@ -82,7 +86,9 @@
             "nom": "Monoprix Menzah 1 Saadi",
             "distance": 900
         }
-      ]
+      ],
+      "efficacite": 0.3882987867,
+      "distance_mean": 0.5885416667
     },
     {
       "dab_index": 4,
@@ -101,7 +107,9 @@
             "nom": "Olympique Shop",
             "distance": 2000
         }
-      ]
+      ],
+      "efficacite": 0.075,
+      "distance_mean": 0.625
     },
     {
       "dab_index": 5,
@@ -128,7 +136,9 @@
             "nom": "Monoprix Menzah 1 Saadi",
             "distance": 900
         }
-      ]
+      ],
+      "efficacite": 0.3882987867,
+      "distance_mean": 0.5885416667
     },
     {
       "dab_index": 6,
@@ -143,7 +153,9 @@
           "nom": "Magason Général Cité Mahrajène",
           "distance": 73
         }
-      ]
+      ],
+      "efficacite": 0.3507391729,
+      "distance_mean": 0.0304166667
     },
     {
       "dab_index": 7,
@@ -170,7 +182,9 @@
             "nom": "Monoprix Menzah 1 Saadi",
             "distance": 900
         }
-      ]
+      ],
+      "efficacite": 0.3882987797,
+      "distance_mean": 0.5885416667
     },
     {
       "dab_index": 8,
@@ -193,7 +207,9 @@
             "nom": "Monoprix Soula Manar 2",
             "distance": 1900
         }
-      ]
+      ],
+      "efficacite": 0.2386262853,
+      "distance_mean": 0.4375
     },
     {
       "dab_index": 9,
@@ -220,7 +236,9 @@
             "nom": "Hanoot Market",
             "distance": 2000
         }
-      ]
+      ],
+      "efficacite": 0.2039237763,
+      "distance_mean": 0.5104166667
     },
     {
       "dab_index": 10,
