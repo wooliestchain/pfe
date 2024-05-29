@@ -467,7 +467,9 @@
             "nom": "Monoprix Menzah 1 Saadi",
             "distance": 800
         }
-      ]
+      ],
+      "efficacite": 0.3518404464,
+      "distance_mean": 0.5208333333
     },
     {
       "dab_index": 21,
@@ -482,7 +484,9 @@
           "nom": "null",
           "distance": 0
         }
-      ]
+      ],
+      "efficacite": 0.3560071131,
+      "distance_mean": 0.0
     },
     {
       "dab_index": 22,
@@ -497,7 +501,9 @@
           "nom": "null",
           "distance": 0
         }
-      ]
+      ],
+      "efficacite": 0.85,
+      "distance_mean": 0.0
     },
     {
       "dab_index": 23,
@@ -512,7 +518,9 @@
           "nom": "Carrefour Express",
           "distance": 2000
         }
-      ]
+      ],
+      "efficacite": 0.4126848522,
+      "distance_mean": 0.8333333333
     },
     {
       "dab_index": 24,
@@ -527,7 +535,9 @@
           "nom": "Aziza",
           "distance": 1200
         }
-      ]
+      ],
+      "efficacite": 0.6070609549,
+      "distance_mean": 0.5
     },
     {
       "dab_index": 25,
@@ -546,7 +556,9 @@
             "nom": "Monoprix Soukra Square",
             "distance": 1900
         }
-      ]
+      ],
+      "efficacite": 0.2693795702,
+      "distance_mean": 0.4791666667
     },
     {
       "dab_index": 26,
@@ -565,7 +577,9 @@
             "nom": "Superette Chahd",
             "distance": 450
         }
-      ]
+      ],
+      "efficacite": 0.3485942881,
+      "distance_mean": 0.15625
     },
     {
       "dab_index": 27,
@@ -584,7 +598,9 @@
             "nom": "Aziza Cité El Isken",
             "distance": 1500
         }
-      ]
+      ],
+      "efficacite": 0.5427774869,
+      "distance_mean": 0.3854166667
     },
     {
       "dab_index": 28,
@@ -607,7 +623,9 @@
             "nom": "Carrefour Express",
             "distance": 3300
         }
-      ]
+      ],
+      "efficacite": 0.3615572017,
+      "distance_mean": 1.0
     },
     {
       "dab_index": 29,
@@ -631,7 +649,9 @@
             "distance": 1100
         }
 
-      ]
+      ],
+      "efficacite": 0.4486552175,
+      "distance_mean": 0.4166666667
     },
     {
       "dab_index": 30,
