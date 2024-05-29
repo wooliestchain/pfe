@@ -257,7 +257,9 @@
             "nom": "Promofrais Tunis",
             "distance": 400
         }
-      ]
+      ],
+      "efficacite": 0.4505927083,
+      "distance_mean": 0.1416666667
     },
     {
       "dab_index": 11,
@@ -276,7 +278,9 @@
             "nom": "Magasin Général El Manar",
             "distance": 700
         }
-      ]
+      ],
+      "efficacite": 0.4351875479,
+      "distance_mean": 0.1479166667
     },
     {
       "dab_index": 12,
@@ -299,7 +303,9 @@
             "nom": "Somefco",
             "distance": 1000
         }
-      ]
+      ],
+      "efficacite": 0.5483704861,
+      "distance_mean": 0.4027777778
     },
     {
       "dab_index": 13,
@@ -322,7 +328,9 @@
             "nom": "Magasin Général",
             "distance": 1300
         }
-      ]
+      ],
+      "efficacite": 0.505305098,
+      "distance_mean": 0.4861111111
     },
     {
       "dab_index": 14,
@@ -337,7 +345,9 @@
           "nom": "Monoprix Central Park",
           "distance": 110
         }
-      ]
+      ],
+      "efficacite": 0.5197593611,
+      "distance_mean": 0.0458333333
     },
     {
       "dab_index": 15,
@@ -360,7 +370,9 @@
             "nom": "Monoprix Central Park",
             "distance": 1300
         }
-      ]
+      ],
+      "efficacite": 0.5094815834,
+      "distance_mean": 0.3472222222
     },
     {
       "dab_index": 16,
@@ -375,7 +387,9 @@
           "nom": "Hanoot Market",
           "distance": 600
         }
-      ]
+      ],
+      "efficacite": 0.25,
+      "distance_mean": 0.25
     },
     {
       "dab_index": 17,
@@ -394,7 +408,9 @@
             "nom": "Monoprix Riadh Andalous",
             "distance": 785
         }
-      ]
+      ],
+      "efficacite": 0.3311490753,
+      "distance_mean": 0.3197916667
     },
     {
       "dab_index": 18,
@@ -413,7 +429,9 @@
             "nom": "Monoprix Tunis Charles de Gaulle",
             "distance": 350
         }
-      ]
+      ],
+      "efficacite": 0.5296106536,
+      "distance_mean": 0.1145833333
     },
     {
       "dab_index": 19,
@@ -428,7 +446,9 @@
           "nom": "Monoprix Bab Souika",
           "distance": 250
         }
-      ]
+      ],
+      "efficacite": 0.6611552175,
+      "distance_mean": 0.1041666667
     },
     {
       "dab_index": 20,
