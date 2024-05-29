@@ -123,52 +123,58 @@ def dab():
         for point in data:
             dab_count_by_city[point['ville']] += 1
 
-        return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city)
+        return render_template('carte.html', map_html=map_html, dab_count_by_city=dab_count_by_city, email = session['email'])
     else:
         return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
 
 
 @app.route('/city/<ville>')
 def city(ville):
-    data = load_data()
-    city_data = [point for point in data if point['ville'].lower() == ville.lower()]
+    if 'email' in session:
+        data = load_data()
+        city_data = [point for point in data if point['ville'].lower() == ville.lower()]
 
-    page = request.args.get('page', 1, type=int)
-    per_page = 10
-    total = len(city_data)
-    start = (page - 1) * per_page
-    end = start + per_page
-    paginated_data = city_data[start:end]
+        page = request.args.get('page', 1, type=int)
+        per_page = 10
+        total = len(city_data)
+        start = (page - 1) * per_page
+        end = start + per_page
+        paginated_data = city_data[start:end]
 
-    map = folium.Map(location=[city_data[0]['latitude'], city_data[0]['longitude']], zoom_start=12)
-    for point in paginated_data:
-        folium.Marker(
-            location=[point['latitude'], point['longitude']],
-            popup=f"{point['secteur']}, {point['ville']}",
-            tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
-        ).add_to(map)
+        map = folium.Map(location=[city_data[0]['latitude'], city_data[0]['longitude']], zoom_start=12)
+        for point in paginated_data:
+            folium.Marker(
+                location=[point['latitude'], point['longitude']],
+                popup=f"{point['secteur']}, {point['ville']}",
+                tooltip=f"Densité: {point['densite_100_metter']}, DAB Near: {point['dab_near']}"
+            ).add_to(map)
 
-    map_html = map._repr_html_()
+        map_html = map._repr_html_()
 
-    return render_template('city.html', map_html=map_html, ville=ville, city_data=paginated_data, page=page, total=total, per_page=per_page)
+        return render_template('city.html', map_html=map_html, ville=ville, city_data=paginated_data, page=page, total=total, per_page=per_page, email = session['email'])
+    else:
+        return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
 
 @app.route('/dab/<int:dab_index>')
 def dab_details(dab_index):
-    data = load_data()
-    dab_data = next((item for item in data if item["dab_index"] == dab_index), None)
-    if not dab_data:
-        return "DAB not found", 404
+    if 'email' in session:
+        data = load_data()
+        dab_data = next((item for item in data if item["dab_index"] == dab_index), None)
+        if not dab_data:
+            return "DAB not found", 404
 
-    # Créer une carte avec un marqueur pour le DAB sélectionné
-    map = folium.Map(location=[dab_data['latitude'], dab_data['longitude']], zoom_start=15)
-    folium.Marker(
-        location=[dab_data['latitude'], dab_data['longitude']],
-        popup=f"{dab_data['secteur']}, {dab_data['ville']}",
-        tooltip=f"Densité: {dab_data['densite_100_metter']}, DAB Near: {dab_data['dab_near']}"
-    ).add_to(map)
-    map_html = map._repr_html_()
+        # Créer une carte avec un marqueur pour le DAB sélectionné
+        map = folium.Map(location=[dab_data['latitude'], dab_data['longitude']], zoom_start=15)
+        folium.Marker(
+            location=[dab_data['latitude'], dab_data['longitude']],
+            popup=f"{dab_data['secteur']}, {dab_data['ville']}",
+            tooltip=f"Densité: {dab_data['densite_100_metter']}, DAB Near: {dab_data['dab_near']}"
+        ).add_to(map)
+        map_html = map._repr_html_()
 
-    return render_template('dab.html', gab_data=dab_data, map_html=map_html)
+        return render_template('dab.html', gab_data=dab_data, map_html=map_html, email = session['email'])
+    else:
+        return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
 
 @app.route('/logout')
 def logout():

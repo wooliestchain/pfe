@@ -84,8 +84,9 @@
    <nav>
         <ul>
             <li><a href="{{ url_for ('home') }}">Accueil</a></li>
-            <li><a href="#">À propos</a></li>
+            <li><a href="">À propos</a></li>
             <li><a href="#">Contact</a></li>
+            <li><a href="{{ url_for('dab') }}">Carte</a></li>
         </ul>
        <ul>
             <li class="logout"><a href="{{ url_for('logout') }}">Déconnexion</a></li>
@@ -134,5 +135,8 @@
             </div>
         </div>
     </div>
+    {% if email %}
+    <p>Hello {{ email }} Vous êtes déjà connecté</p>
+    {% endif %}
 </body>
 </html>
