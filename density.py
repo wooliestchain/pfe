@@ -1,10 +1,7 @@
 import folium
 from folium.plugins import HeatMap
 
-# Initialiser la carte
-mapobj = folium.Map([36.934418779239266, 10.093014639942036])
-
-# Données
+# Vos données
 data = [
     [36.86461188050044, 10.217478287058501, 1976.3682861328125],
     [36.85932073032182, 10.190136329449802, 5120.5224609375],
@@ -68,31 +65,28 @@ data = [
     [35.77355421964674, 10.832086281300468, 1413.3939208984375]
 ]
 
-# Ajouter un marqueur pour la carte
-folium.Marker(location=[36.80289707647919, 10.169652571165928]).add_to(mapobj)
+# Création de la carte centrée sur le premier point
+m = folium.Map(location=[data[0][0], data[0][1]], zoom_start=10)
 
-# Préparer les données de la heatmap
-mapdata = [[x[0], x[1], (x[2] - 50) / (100 - 50)] for x in data]
+# Ajout des points sur la carte
+for point in data:
+    folium.CircleMarker(
+        location=[point[0], point[1]],
+        radius=5,
+        color='blue',
+        fill=True,
+        fill_color='blue'
+    ).add_to(m)
 
-# Définir le gradient de couleurs
-colgradient = {
-    0.0: 'blue',
-    0.6: 'cyan',
-    0.8: 'yellow',
-    1.0: 'red'
-}
+# Préparation des données pour la couche de densité
+heat_data = [[point[0], point[1], point[2]] for point in data]
 
-# Créer un FeatureGroup pour la heatmap
-heatmap_layer = folium.FeatureGroup(name='Heat Map')
+# Ajout de la couche de densité
+heat_layer = HeatMap(heat_data, min_opacity=0.2, max_val=max(point[2] for point in data), radius=15, blur=10, gradient={0.2: 'cyan', 0.4: 'lime', 0.6: 'yellow', 0.8: 'orange', 1: 'red'})
+heat_layer.add_to(folium.FeatureGroup(name='Heat Map').add_to(m))
 
-# Ajouter la heatmap au FeatureGroup
-HeatMap(mapdata, gradient=colgradient, radius=50).add_to(heatmap_layer)
+# Ajout du contrôle des couches
+folium.LayerControl().add_to(m)
 
-# Ajouter le FeatureGroup à la carte
-heatmap_layer.add_to(mapobj)
-
-# Ajouter le contrôle de couches
-folium.LayerControl().add_to(mapobj)
-
-# Sauvegarder la carte
-mapobj.save('output.html')
+# Sauvegarde de la carte
+m.save('map.html')
