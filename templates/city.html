@@ -83,14 +83,18 @@
 <body>
    <nav>
         <ul>
-            <li><a href="{{ url_for ('home') }}">Accueil</a></li>
+            <li><a href="{{ url_for('home') }}">Accueil</a></li>
             <li><a href="">À propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="{{ url_for('dab') }}">Carte</a></li>
+            {% if session['role'] == 'Décideur' %}
+                <li><a href="{{ url_for('ajouter') }}">Ajouter</a></li>
+                <li><a href="{{ url_for('modifier') }}">Modifier</a></li>
+            {% endif %}
         </ul>
-       <ul>
+        <ul>
             <li class="logout"><a href="{{ url_for('logout') }}">Déconnexion</a></li>
-       </ul>
+        </ul>
     </nav>
     <h1>DAB in {{ ville }}</h1>
     <div class="container">

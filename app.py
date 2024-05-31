@@ -195,12 +195,110 @@ def logout():
     session.pop('email', None)
     return redirect(url_for('login'))
 
-@app.route('/ajouter')
+@app.route('/ajouter', methods=['GET', 'POST'])
 def ajouter():
     if 'email' in session and session.get('role') == 'Décideur':
+        if request.method == 'POST':
+            # Récupération des données du formulaire
+            secteur = request.form['secteur']
+            longitude = float(request.form['longitude'])
+            latitude = float(request.form['latitude'])
+            densite = float(request.form['densite_100_metter'])
+            ville = request.form['ville']
+            dab_near = float(request.form['dab_near'])
+            magasins = []
+            for i in range(len(request.form.getlist('magasin_nom'))):
+                magasin = {
+                    'nom': request.form.getlist('magasin_nom')[i],
+                    'distance': float(request.form.getlist('magasin_distance')[i])
+                }
+                magasins.append(magasin)
+
+            # Calcul de l'efficacité et de la distance moyenne aux magasins
+            weight_density = 0.5  # poids fictif, ajustez selon vos besoins
+            weight_dab_near = 0.5  # poids fictif, ajustez selon vos besoins
+            efficacite = (weight_density * densite) + (weight_dab_near * dab_near)
+            distance_mean = sum(m['distance'] for m in magasins) / len(magasins)
+
+            # Charger les dabs existants depuis le fichier JSON
+            try:
+                with open('final.json', 'r') as file:
+                    dabs = json.load(file)
+            except FileNotFoundError:
+                dabs = []
+
+            # Déterminer le nouvel index du dab
+            dab_index = dabs[-1]['dab_index'] + 1 if dabs else 1
+
+            # Créer le nouveau dab
+            new_dab = {
+                "dab_index": dab_index,
+                "longitude": longitude,
+                "latitude": latitude,
+                "densite_100_metter": densite,
+                "secteur": secteur,
+                "ville": ville,
+                "dab_near": dab_near,
+                "magasin": magasins,
+                "efficacite": efficacite,
+                "distance_mean": distance_mean
+            }
+
+            # Sauvegarder le nouveau dab dans le fichier JSON
+            dabs.append(new_dab)
+            with open('final.json', 'w') as file:
+                json.dump(dabs, file, indent=4)
+
+            # Rediriger vers la page de validation
+            return redirect(url_for('valider', dab_index=dab_index))
+
         return render_template('ajouter.html')
     else:
         return redirect(url_for('home'))
+
+@app.route('/valider/<int:dab_index>', methods=['GET', 'POST'])
+def valider(dab_index):
+    if 'email' in session and session.get('role') == 'Décideur':
+        # Charger les dabs existants depuis le fichier JSON
+        with open('final.json', 'r') as file:
+            dabs = json.load(file)
+
+        # Trouver le dab correspondant
+        dab = next((d for d in dabs if d['dab_index'] == dab_index), None)
+
+        if not dab:
+            return redirect(url_for('ajouter'))
+
+        if request.method == 'POST':
+            # Si l'utilisateur valide les informations
+            if request.form.get('action') == 'Valider':
+                return redirect(url_for('home'))
+            # Si l'utilisateur veut modifier les informations
+            elif request.form.get('action') == 'Modifier':
+                return redirect(url_for('ajouter'))
+
+        # Créer la carte avec folium
+        import folium
+        from folium.plugins import MarkerCluster
+
+        m = folium.Map(location=[dab['latitude'], dab['longitude']], zoom_start=15)
+        folium.Marker(
+            location=[dab['latitude'], dab['longitude']],
+            popup=f"DAB {dab['dab_index']}",
+            icon=folium.Icon(color='blue', icon='info-sign')
+        ).add_to(m)
+
+        # Sauvegarder la carte en HTML
+        m.save('templates/map.html')
+
+        return render_template('valid.html', dab=dab)
+    else:
+        return redirect(url_for('home'))
+
+
+
+
+
 
 @app.route('/modifier')
 def modifier():

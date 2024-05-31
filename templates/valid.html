@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valider DAB</title>
+</head>
+<body>
+    <h1>Valider DAB</h1>
+    <div style="display: flex;">
+        <div id="map" style="width: 50%; height: 600px;"></div>
+        <div style="width: 50%; padding: 20px;">
+            <h2>Détails du DAB</h2>
+            <p><strong>Secteur:</strong> {{ dab.secteur }}</p>
+            <p><strong>Longitude:</strong> {{ dab.longitude }}</p>
+            <p><strong>Latitude:</strong> {{ dab.latitude }}</p>
+            <p><strong>Densité (100 mètres):</strong> {{ dab.densite_100_metter }}</p>
+            <p><strong>Ville:</strong> {{ dab.ville }}</p>
+            <p><strong>DAB proche:</strong> {{ dab.dab_near }}</p>
+            <h3>Magasins</h3>
+            <ul>
+                {% for magasin in dab.magasin %}
+                    <li>{{ magasin.nom }} ({{ magasin.distance }} mètres)</li>
+                {% endfor %}
+            </ul>
+            <p><strong>Efficacité:</strong> {{ dab.efficacite }}</p>
+            <p><strong>Distance moyenne aux magasins:</strong> {{ dab.distance_mean }}</p>
+            <form method="POST">
+                <button type="submit" name="action" value="Modifier">Modifier</button>
+                <button type="submit" name="action" value="Valider">Valider</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        const mapElement = document.getElementById('map');
+        mapElement.innerHTML = '<iframe src="{{ url_for("static", filename="map.html") }}" style="width: 100%; height: 100%; border: none;"></iframe>';
+    </script>
+</body>
+</html>

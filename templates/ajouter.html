@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter DAB</title>
+</head>
+<body>
+    <h1>Ajouter un DAB</h1>
+    <form method="POST">
+        <label for="secteur">Secteur:</label>
+        <input type="text" name="secteur" id="secteur" required><br>
+        <label for="longitude">Longitude:</label>
+        <input type="number" step="any" name="longitude" id="longitude" required><br>
+        <label for="latitude">Latitude:</label>
+        <input type="number" step="any" name="latitude" id="latitude" required><br>
+        <label for="densite_100_metter">Densité (100 mètres):</label>
+        <input type="number" step="any" name="densite_100_metter" id="densite_100_metter" required><br>
+        <label for="ville">Ville:</label>
+        <input type="text" name="ville" id="ville" required><br>
+        <label for="dab_near">DAB proche (distance en mètres):</label>
+        <input type="number" step="any" name="dab_near" id="dab_near" required><br>
+        <h3>Magasins</h3>
+        <div id="magasins">
+            <div class="magasin">
+                <label for="magasin_nom">Nom:</label>
+                <input type="text" name="magasin_nom" id="magasin_nom" required>
+                <label for="magasin_distance" id="magasin_distance">Distance (mètres):</label>
+                <input type="number" step="any" name="magasin_distance" required>
+            </div>
+        </div>
+        <button type="button" onclick="addMagasin()">Ajouter un magasin</button><br><br>
+        <button type="submit">Valider</button>
+    </form>
+    <script>
+        function addMagasin() {
+            const magasins = document.getElementById('magasins');
+            const newMagasin = document.createElement('div');
+            newMagasin.classList.add('magasin');
+            newMagasin.innerHTML = `
+                <label for="magasin_nom">Nom:</label>
+                <input type="text" name="magasin_nom" required>
+                <label for="magasin_distance">Distance (mètres):</label>
+                <input type="number" step="any" name="magasin_distance" required>
+            `;
+            magasins.appendChild(newMagasin);
+        }
+    </script>
+</body>
+</html>
