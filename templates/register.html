@@ -6,6 +6,9 @@
 </head>
 <body>
   <h1>Register</h1>
+  {% if error %}
+  <p style="color:red;">{{ error }}</p>
+  {% endif %}
   <form method="post" action="/register">
       <label for="email">email:</label>
       <input type="email" id="email" name="email" required><br><br>
@@ -17,11 +20,12 @@
       <input type="text" id="prenom" name="prenom" required><br><br>
       <label for="role">Rôle</label>
       <select id="role" name="role">
-          <option value="option1">Monétique</option>
-          <option value="option2">Décideur</option>
+          <option value="Monétique">Monétique</option>
+          <option value="Décideur">Décideur</option>
           <option value="option3">Option 3</option>
       </select>
       <input type="submit" value="Register">
+      <p>Déja inscrit ?Connectez vous <a href="{{ url_for('login') }}">ici</a></p>
   </form>
 </body>
 </html>

@@ -1,5 +1,5 @@
 import sqlalchemy
-from flask import Flask, render_template, request, redirect, url_for, session, jsonify
+from flask import Flask, render_template, request, redirect, url_for, session, jsonify, flash
 from flask_sqlalchemy import SQLAlchemy
 import mysql.connector
 import bcrypt
@@ -32,7 +32,8 @@ cur = conn.cursor()
 @app.route('/')
 def home():
     if 'email' in session:
-        return render_template('home.html', email = session['email'])
+        user_role = session.get('role', None)  # Récupérer le rôle de l'utilisateur depuis la session
+        return render_template('home.html', email=session['email'], role=user_role)
     else:
         return render_template('home.html')
 
@@ -46,7 +47,7 @@ def login():
 
         # Requête pour vérifier l'email et le mot de passe, ainsi que l'existence d'un jeton valide
         query = """
-        SELECT u.user_id, u.email, u.password
+        SELECT u.user_id, u.email, u.password, u.role
         FROM users u
         JOIN token t ON u.user_id = t.user_id
         WHERE u.email = %s AND t.token_id IS NOT NULL
@@ -57,6 +58,7 @@ def login():
         # Si l'utilisateur existe et que le mot de passe est correct
         if user and bcrypt.checkpw(pwd.encode('utf-8'), user[2].encode('utf-8')):
             session['email'] = user[1]
+            session['role'] = user[3]
 
             # Insertion dans la table log
             log_query = """
@@ -84,11 +86,23 @@ def register():
         prenom = request.form['prenom']
         role = request.form['role']
         pwd = request.form['password']
+
+        # Vérifiez si l'email existe déjà
+        cur.execute("SELECT * FROM users WHERE email = %s", (email,))
+        user = cur.fetchone()
+        if user:
+            # Si l'email existe déjà, retournez un message d'erreur
+            error = "L'email existe déjà. Veuillez utiliser un autre email."
+            return render_template('register.html', error=error)
+
+        # Si l'email n'existe pas, continuez avec l'inscription
         hashed_pwd = bcrypt.hashpw(pwd.encode('utf-8'), bcrypt.gensalt())
-        cur.execute(""" INSERT INTO users (email, nom, prenom, role, password) VALUES (%s, %s, %s, %s, %s);""", (email, nom, prenom, role,  hashed_pwd))
+        cur.execute("""INSERT INTO users (email, nom, prenom, role, password) VALUES (%s, %s, %s, %s, %s);""",
+                    (email, nom, prenom, role, hashed_pwd))
         conn.commit()
         return redirect(url_for('login'))
     return render_template('register.html')
+
 
 # @app.route("/map")
 # def base():
@@ -181,6 +195,19 @@ def logout():
     session.pop('email', None)
     return redirect(url_for('login'))
 
+@app.route('/ajouter')
+def ajouter():
+    if 'email' in session and session.get('role') == 'Décideur':
+        return render_template('ajouter.html')
+    else:
+        return redirect(url_for('home'))
+
+@app.route('/modifier')
+def modifier():
+    if 'email' in session and session.get('role') == 'Décideur':
+        return render_template('modifier.html')
+    else:
+        return redirect(url_for('home'))
 
 
 
