@@ -79,7 +79,7 @@
             <li><a href="">À propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="{{ url_for('dab') }}">Carte</a></li>
-            {% if session['role'] == 'Décideur' %}
+            {% if role == 'Décideur' %}
                 <li><a href="{{ url_for('ajouter') }}">Ajouter</a></li>
                 <li><a href="{{ url_for('modifier') }}">Modifier</a></li>
             {% endif %}
@@ -132,6 +132,11 @@
                     </ul>
                 </div>
             </div>
+            {% if role == 'Décideur' %}
+                <form method="POST">
+                    <button type="submit" name="delete" value="delete">Supprimer</button>
+                </form>
+            {% endif %}
         </div>
     </div>
 </body>

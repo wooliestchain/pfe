@@ -1,645 +1,644 @@
 [
     {
-      "dab_index": 1,
-      "longitude": 10.217478287058501,
-      "latitude": 36.86461188050044,
-      "densite_100_metter": 1976.3682861328125,
-      "secteur": "Borj Louizir",
-      "ville": "Tunis",
-      "dab_near": 6,
-      "magasin": [
-        {
-          "nom": "Superette 2 M",
-          "distance": 1200
-        },
-        {
-            "nom": "Monoprix Soukra Square",
-            "distance": 400
-        },
-        {
-            "nom": "Monoprix Mini M Soukra",
-            "distance": 1400
-        },
-        {
-            "nom": "Magasin Général Borj Louzir",
-            "distance": 1800
-        }
-      ]
+        "dab_index": 1,
+        "longitude": 10.217478287058501,
+        "latitude": 36.86461188050044,
+        "densite_100_metter": 1976.3682861328125,
+        "secteur": "Borj Louizir",
+        "ville": "Tunis",
+        "dab_near": 6,
+        "magasin": [
+            {
+                "nom": "Superette 2 M",
+                "distance": 1200
+            },
+            {
+                "nom": "Monoprix Soukra Square",
+                "distance": 400
+            },
+            {
+                "nom": "Monoprix Mini M Soukra",
+                "distance": 1400
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Borj Louzir",
+                "distance": 1800
+            }
+        ]
     },
     {
-      "dab_index": 2,
-      "longitude": 10.190136329449802,
-      "latitude": 36.85932073032182,
-      "densite_100_metter": 5120.5224609375,
-      "secteur": "Cité Attamir",
-      "ville": "Tunis",
-      "dab_near": 1,
-      "magasin": [
-        {
-          "nom": "Boughdiri Market",
-          "distance": 67
-        },
-        {
-            "nom": "Monoprix Ariana",
-            "distance": 1000
-        },
-        {
-            "nom": "Familia Market Ariana",
-            "distance": 750
-        },
-        {
-            "nom": "Carrefour Market Ariana",
-            "distance": 1200
-        },
-        {
-            "nom": "Aziza",
-            "distance": 1400
-        }
-      ]
+        "dab_index": 2,
+        "longitude": 10.190136329449802,
+        "latitude": 36.85932073032182,
+        "densite_100_metter": 5120.5224609375,
+        "secteur": "Cit\u00e9 Attamir",
+        "ville": "Tunis",
+        "dab_near": 1,
+        "magasin": [
+            {
+                "nom": "Boughdiri Market",
+                "distance": 67
+            },
+            {
+                "nom": "Monoprix Ariana",
+                "distance": 1000
+            },
+            {
+                "nom": "Familia Market Ariana",
+                "distance": 750
+            },
+            {
+                "nom": "Carrefour Market Ariana",
+                "distance": 1200
+            },
+            {
+                "nom": "Aziza",
+                "distance": 1400
+            }
+        ]
     },
     {
-      "dab_index": 3,
-      "longitude": 10.19142180000206,
-      "latitude": 36.84693253206098,
-      "densite_100_metter": 1976.3685302734375,
-      "secteur": "Menzah 4",
-      "ville": "Tunis",
-      "dab_near": 5,
-      "magasin": [
-        {
-          "nom": "Carrefour Market",
-          "distance": 550
-        },
-        {
-            "nom": "Vitamine E Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Smile Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Monoprix Menzah 1 Saadi",
-            "distance": 900
-        }
-      ]
+        "dab_index": 3,
+        "longitude": 10.19142180000206,
+        "latitude": 36.84693253206098,
+        "densite_100_metter": 1976.3685302734375,
+        "secteur": "Menzah 4",
+        "ville": "Tunis",
+        "dab_near": 5,
+        "magasin": [
+            {
+                "nom": "Carrefour Market",
+                "distance": 550
+            },
+            {
+                "nom": "Vitamine E Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Smile Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Monoprix Menzah 1 Saadi",
+                "distance": 900
+            }
+        ]
     },
     {
-      "dab_index": 4,
-      "longitude": 10.210523647852378,
-      "latitude": 36.83226772164917,
-      "densite_100_metter": null,
-      "secteur": "Charguia",
-      "ville": "Tunis",
-      "dab_near": 0,
-      "magasin": [
-        {
-          "nom": "Magasin Général Charguia",
-          "distance": 1000
-        },
-        {
-            "nom": "Olympique Shop",
-            "distance": 2000
-        }
-      ]
+        "dab_index": 4,
+        "longitude": 10.210523647852378,
+        "latitude": 36.83226772164917,
+        "densite_100_metter": null,
+        "secteur": "Charguia",
+        "ville": "Tunis",
+        "dab_near": 0,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Charguia",
+                "distance": 1000
+            },
+            {
+                "nom": "Olympique Shop",
+                "distance": 2000
+            }
+        ]
     },
     {
-      "dab_index": 5,
-      "longitude": 10.191806488345284,
-      "latitude": 36.847172226146355,
-      "densite_100_metter": 1976.3685302734375,
-      "secteur": "Menzah 4",
-      "ville": "Tunis",
-      "dab_near": 5,
-      "magasin": [
-        {
-            "nom": "Carrefour Market",
-            "distance": 550
-        },
-        {
-            "nom": "Vitamine E Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Smile Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Monoprix Menzah 1 Saadi",
-            "distance": 900
-        }
-      ]
+        "dab_index": 5,
+        "longitude": 10.191806488345284,
+        "latitude": 36.847172226146355,
+        "densite_100_metter": 1976.3685302734375,
+        "secteur": "Menzah 4",
+        "ville": "Tunis",
+        "dab_near": 5,
+        "magasin": [
+            {
+                "nom": "Carrefour Market",
+                "distance": 550
+            },
+            {
+                "nom": "Vitamine E Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Smile Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Monoprix Menzah 1 Saadi",
+                "distance": 900
+            }
+        ]
     },
     {
-      "dab_index": 6,
-      "longitude": 10.179434588345284,
-      "latitude": 36.82964497121142,
-      "densite_100_metter": 2005.1417236328125,
-      "secteur": "Cité Mahrajène",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Magason Général Cité Mahrajène",
-          "distance": 73
-        }
-      ]
+        "dab_index": 6,
+        "longitude": 10.179434588345284,
+        "latitude": 36.82964497121142,
+        "densite_100_metter": 2005.1417236328125,
+        "secteur": "Cit\u00e9 Mahraj\u00e8ne",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Magason G\u00e9n\u00e9ral Cit\u00e9 Mahraj\u00e8ne",
+                "distance": 73
+            }
+        ]
     },
     {
-      "dab_index": 7,
-      "longitude": 10.191116434972384,
-      "latitude": 36.847038861467276,
-      "densite_100_metter": 1976.3682861328125,
-      "secteur": "Menzah 4",
-      "ville": "Tunis",
-      "dab_near": 5,
-      "magasin": [
-        {
-            "nom": "Carrefour Market",
-            "distance": 550
-        },
-        {
-            "nom": "Vitamine E Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Smile Market",
-            "distance": 2100
-        },
-        {
-            "nom": "Monoprix Menzah 1 Saadi",
-            "distance": 900
-        }
-      ]
+        "dab_index": 7,
+        "longitude": 10.191116434972384,
+        "latitude": 36.847038861467276,
+        "densite_100_metter": 1976.3682861328125,
+        "secteur": "Menzah 4",
+        "ville": "Tunis",
+        "dab_near": 5,
+        "magasin": [
+            {
+                "nom": "Carrefour Market",
+                "distance": 550
+            },
+            {
+                "nom": "Vitamine E Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Smile Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Monoprix Menzah 1 Saadi",
+                "distance": 900
+            }
+        ]
     },
     {
-      "dab_index": 8,
-      "longitude": 10.166099919016244,
-      "latitude": 36.84242826837058,
-      "densite_100_metter": 4450.72021484375,
-      "secteur": "El Manar 2",
-      "ville": "Tunis",
-      "dab_near": 0,
-      "magasin": [
-        {
-          "nom": "Monoprix Menzah 6",
-          "distance": 850
-        },
-        {
-            "nom": "Carrefour Market",
-            "distance": 400
-        },
-        {
-            "nom": "Monoprix Soula Manar 2",
-            "distance": 1900
-        }
-      ]
+        "dab_index": 8,
+        "longitude": 10.166099919016244,
+        "latitude": 36.84242826837058,
+        "densite_100_metter": 4450.72021484375,
+        "secteur": "El Manar 2",
+        "ville": "Tunis",
+        "dab_near": 0,
+        "magasin": [
+            {
+                "nom": "Monoprix Menzah 6",
+                "distance": 850
+            },
+            {
+                "nom": "Carrefour Market",
+                "distance": 400
+            },
+            {
+                "nom": "Monoprix Soula Manar 2",
+                "distance": 1900
+            }
+        ]
     },
     {
-      "dab_index": 9,
-      "longitude": 10.184233641106577,
-      "latitude": 36.81714043624128,
-      "densite_100_metter": 1976.3681640625,
-      "secteur": "Cité Montplaisir",
-      "ville": "Tunis",
-      "dab_near": 1,
-      "magasin": [
-        {
-          "nom": "Promofrais Tunis",
-          "distance": 1000
-        },
-        {
-            "nom": "Monoprix Tunis Lafayette",
-            "distance": 900
-        },
-        {
-            "nom": "Somefco",
-            "distance": 1000
-        },
-        {
-            "nom": "Hanoot Market",
-            "distance": 2000
-        }
-      ]
+        "dab_index": 9,
+        "longitude": 10.184233641106577,
+        "latitude": 36.81714043624128,
+        "densite_100_metter": 1976.3681640625,
+        "secteur": "Cit\u00e9 Montplaisir",
+        "ville": "Tunis",
+        "dab_near": 1,
+        "magasin": [
+            {
+                "nom": "Promofrais Tunis",
+                "distance": 1000
+            },
+            {
+                "nom": "Monoprix Tunis Lafayette",
+                "distance": 900
+            },
+            {
+                "nom": "Somefco",
+                "distance": 1000
+            },
+            {
+                "nom": "Hanoot Market",
+                "distance": 2000
+            }
+        ]
     },
     {
-      "dab_index": 10,
-      "longitude": 10.178412729449802,
-      "latitude": 36.81525529968038,
-      "densite_100_metter": 8078.29833984375,
-      "secteur": "Jeanne d'Arc",
-      "ville": "Tunis",
-      "dab_near": 1,
-      "magasin": [
-        {
-          "nom": "Monoprix Tunis Lafayette",
-          "distance": 280
-        },
-        {
-            "nom": "Promofrais Tunis",
-            "distance": 400
-        }
-      ]
+        "dab_index": 10,
+        "longitude": 10.178412729449802,
+        "latitude": 36.81525529968038,
+        "densite_100_metter": 8078.29833984375,
+        "secteur": "Jeanne d'Arc",
+        "ville": "Tunis",
+        "dab_near": 1,
+        "magasin": [
+            {
+                "nom": "Monoprix Tunis Lafayette",
+                "distance": 280
+            },
+            {
+                "nom": "Promofrais Tunis",
+                "distance": 400
+            }
+        ]
     },
     {
-      "dab_index": 11,
-      "longitude": 10.156815424538825,
-      "latitude": 36.83806048336942,
-      "densite_100_metter": 5814.4033203125,
-      "secteur": "El Manar 2",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Monoprix Soula Manar 2",
-          "distance": 10
-        },
-        {
-            "nom": "Magasin Général El Manar",
-            "distance": 700
-        }
-      ]
+        "dab_index": 11,
+        "longitude": 10.156815424538825,
+        "latitude": 36.83806048336942,
+        "densite_100_metter": 5814.4033203125,
+        "secteur": "El Manar 2",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Monoprix Soula Manar 2",
+                "distance": 10
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral El Manar",
+                "distance": 700
+            }
+        ]
     },
     {
-      "dab_index": 12,
-      "longitude": 10.180346088345285,
-      "latitude": 36.81328966310319,
-      "densite_100_metter": 8078.29833984375,
-      "secteur": "La Fayette",
-      "ville": "Tunis",
-      "dab_near": 4,
-      "magasin": [
-        {
-            "nom": "Promofrais Tunis",
-            "distance": 1000
-        },
-        {
-            "nom": "Monoprix Tunis Lafayette",
-            "distance": 900
-        },
-        {
-            "nom": "Somefco",
-            "distance": 1000
-        }
-      ]
+        "dab_index": 12,
+        "longitude": 10.180346088345285,
+        "latitude": 36.81328966310319,
+        "densite_100_metter": 8078.29833984375,
+        "secteur": "La Fayette",
+        "ville": "Tunis",
+        "dab_near": 4,
+        "magasin": [
+            {
+                "nom": "Promofrais Tunis",
+                "distance": 1000
+            },
+            {
+                "nom": "Monoprix Tunis Lafayette",
+                "distance": 900
+            },
+            {
+                "nom": "Somefco",
+                "distance": 1000
+            }
+        ]
     },
     {
-      "dab_index": 13,
-      "longitude": 10.18289317668851,
-      "latitude": 36.7996269512662,
-      "densite_100_metter": 8911.1357421875,
-      "secteur": "Tunis Centre",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "Monoprix Central Park",
-          "distance": 700
-        },
-        {
-            "nom": "Monoprix Tunis Charles de Gaulle",
-            "distance": 1500
-        },
-        {
-            "nom": "Magasin Général",
-            "distance": 1300
-        }
-      ]
+        "dab_index": 13,
+        "longitude": 10.18289317668851,
+        "latitude": 36.7996269512662,
+        "densite_100_metter": 8911.1357421875,
+        "secteur": "Tunis Centre",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "Monoprix Central Park",
+                "distance": 700
+            },
+            {
+                "nom": "Monoprix Tunis Charles de Gaulle",
+                "distance": 1500
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 1300
+            }
+        ]
     },
     {
-      "dab_index": 14,
-      "longitude": 10.18305601349366,
-      "latitude": 36.80274422147794,
-      "densite_100_metter": 8078.2978515625,
-      "secteur": "Passage",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Monoprix Central Park",
-          "distance": 110
-        }
-      ]
+        "dab_index": 14,
+        "longitude": 10.18305601349366,
+        "latitude": 36.80274422147794,
+        "densite_100_metter": 8078.2978515625,
+        "secteur": "Passage",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Monoprix Central Park",
+                "distance": 110
+            }
+        ]
     },
     {
-      "dab_index": 15,
-      "longitude": 10.178146315346597,
-      "latitude": 36.80134741383669,
-      "densite_100_metter": 8078.2978515625,
-      "secteur": "El Hafsia",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "Magasin Général",
-          "distance": 450
-        },
-        {
-            "nom": "Monoprix Tunis Charles de Gaulle",
-            "distance": 750
-        },
-        {
-            "nom": "Monoprix Central Park",
-            "distance": 1300
-        }
-      ]
+        "dab_index": 15,
+        "longitude": 10.178146315346597,
+        "latitude": 36.80134741383669,
+        "densite_100_metter": 8078.2978515625,
+        "secteur": "El Hafsia",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 450
+            },
+            {
+                "nom": "Monoprix Tunis Charles de Gaulle",
+                "distance": 750
+            },
+            {
+                "nom": "Monoprix Central Park",
+                "distance": 1300
+            }
+        ]
     },
     {
-      "dab_index": 16,
-      "longitude": 10.184597429449802,
-      "latitude": 36.8085703268267,
-      "densite_100_metter": null,
-      "secteur": "Mohamed V",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Hanoot Market",
-          "distance": 600
-        }
-      ]
+        "dab_index": 16,
+        "longitude": 10.184597429449802,
+        "latitude": 36.8085703268267,
+        "densite_100_metter": null,
+        "secteur": "Mohamed V",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Hanoot Market",
+                "distance": 600
+            }
+        ]
     },
     {
-      "dab_index": 17,
-      "longitude": 10.180164987103957,
-      "latitude": 36.87534250833312,
-      "densite_100_metter": 5120.5224609375,
-      "secteur": "Riadh Andalous",
-      "ville": "Tunis",
-      "dab_near": 1,
-      "magasin": [
-        {
-          "nom": "Carrefour Market",
-          "distance": 750
-        },
-        {
-            "nom": "Monoprix Riadh Andalous",
-            "distance": 785
-        }
-      ]
+        "dab_index": 17,
+        "longitude": 10.180164987103957,
+        "latitude": 36.87534250833312,
+        "densite_100_metter": 5120.5224609375,
+        "secteur": "Riadh Andalous",
+        "ville": "Tunis",
+        "dab_near": 1,
+        "magasin": [
+            {
+                "nom": "Carrefour Market",
+                "distance": 750
+            },
+            {
+                "nom": "Monoprix Riadh Andalous",
+                "distance": 785
+            }
+        ]
     },
     {
-      "dab_index": 18,
-      "longitude": 10.175587226391762,
-      "latitude": 36.79892380633758,
-      "densite_100_metter": 8911.1357421875,
-      "secteur": "La Medina",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Magasin Général",
-          "distance": 200
-        },
-        {
-            "nom": "Monoprix Tunis Charles de Gaulle",
-            "distance": 350
-        }
-      ]
+        "dab_index": 18,
+        "longitude": 10.175587226391762,
+        "latitude": 36.79892380633758,
+        "densite_100_metter": 8911.1357421875,
+        "secteur": "La Medina",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 200
+            },
+            {
+                "nom": "Monoprix Tunis Charles de Gaulle",
+                "distance": 350
+            }
+        ]
     },
     {
-      "dab_index": 19,
-      "longitude": 10.168516541106579,
-      "latitude": 36.805022190352545,
-      "densite_100_metter": 11715.1484375,
-      "secteur": "El Hafsia",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "Monoprix Bab Souika",
-          "distance": 250
-        }
-      ]
+        "dab_index": 19,
+        "longitude": 10.168516541106579,
+        "latitude": 36.805022190352545,
+        "densite_100_metter": 11715.1484375,
+        "secteur": "El Hafsia",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "Monoprix Bab Souika",
+                "distance": 250
+            }
+        ]
     },
     {
-      "dab_index": 20,
-      "longitude": 10.190503017793025,
-      "latitude": 36.84637454196032,
-      "densite_100_metter": 1976.3682861328125,
-      "secteur": "Menzah 4",
-      "ville": "Tunis",
-      "dab_near": 4,
-      "magasin": [
-        {
-          "nom": "Carrefour Market",
-          "distance": 1700
-        },
-        {
-            "nom": "Monoprix Menzah 1 Saadi",
-            "distance": 800
-        }
-      ]
+        "dab_index": 20,
+        "longitude": 10.190503017793025,
+        "latitude": 36.84637454196032,
+        "densite_100_metter": 1976.3682861328125,
+        "secteur": "Menzah 4",
+        "ville": "Tunis",
+        "dab_near": 4,
+        "magasin": [
+            {
+                "nom": "Carrefour Market",
+                "distance": 1700
+            },
+            {
+                "nom": "Monoprix Menzah 1 Saadi",
+                "distance": 800
+            }
+        ]
     },
     {
-      "dab_index": 21,
-      "longitude": 10.218093626391763,
-      "latitude": 36.84657202678895,
-      "densite_100_metter": 1976.3682861328125,
-      "secteur": "Aéroport Tunis-Carthage",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "null",
-          "distance": 0
-        }
-      ]
+        "dab_index": 21,
+        "longitude": 10.218093626391763,
+        "latitude": 36.84657202678895,
+        "densite_100_metter": 1976.3682861328125,
+        "secteur": "A\u00e9roport Tunis-Carthage",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "null",
+                "distance": 0
+            }
+        ]
     },
     {
-      "dab_index": 22,
-      "longitude": 10.117239288345285,
-      "latitude": 36.83380582381766,
-      "densite_100_metter": 17643.904296875,
-      "secteur": "Cité Ettadhamen",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "null",
-          "distance": 0
-        }
-      ]
+        "dab_index": 22,
+        "longitude": 10.117239288345285,
+        "latitude": 36.83380582381766,
+        "densite_100_metter": 17643.904296875,
+        "secteur": "Cit\u00e9 Ettadhamen",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "null",
+                "distance": 0
+            }
+        ]
     },
     {
-      "dab_index": 23,
-      "longitude": 10.186194641700071,
-      "latitude": 36.79354049999999,
-      "densite_100_metter": 8093.3125,
-      "secteur": "Tunis Centre",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "Carrefour Express",
-          "distance": 2000
-        }
-      ]
+        "dab_index": 23,
+        "longitude": 10.186194641700071,
+        "latitude": 36.79354049999999,
+        "densite_100_metter": 8093.3125,
+        "secteur": "Tunis Centre",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "Carrefour Express",
+                "distance": 2000
+            }
+        ]
     },
     {
-      "dab_index": 24,
-      "longitude": 10.123335594479476,
-      "latitude": 36.80497259140966,
-      "densite_100_metter": 14364.2890625,
-      "secteur": "Cité Mourabine",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Aziza",
-          "distance": 1200
-        }
-      ]
+        "dab_index": 24,
+        "longitude": 10.123335594479476,
+        "latitude": 36.80497259140966,
+        "densite_100_metter": 14364.2890625,
+        "secteur": "Cit\u00e9 Mourabine",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Aziza",
+                "distance": 1200
+            }
+        ]
     },
     {
-      "dab_index": 25,
-      "longitude": 10.20695083006141,
-      "latitude": 36.856463284578304,
-      "densite_100_metter": 2301.220458984375,
-      "secteur": "Charguia 2",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Monoprix Mini M Soukra",
-          "distance": 400
-        },
-        {
-            "nom": "Monoprix Soukra Square",
-            "distance": 1900
-        }
-      ]
+        "dab_index": 25,
+        "longitude": 10.20695083006141,
+        "latitude": 36.856463284578304,
+        "densite_100_metter": 2301.220458984375,
+        "secteur": "Charguia 2",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Monoprix Mini M Soukra",
+                "distance": 400
+            },
+            {
+                "nom": "Monoprix Soukra Square",
+                "distance": 1900
+            }
+        ]
     },
     {
-      "dab_index": 26,
-      "longitude": 10.109423211658838,
-      "latitude": 36.78382775204915,
-      "densite_100_metter": 1053.1395263671875,
-      "secteur": "Cité Essalama Zahrouni",
-      "ville": "Tunis",
-      "dab_near": 3,
-      "magasin": [
-        {
-          "nom": "Ben Ayed",
-          "distance": 300
-        },
-        {
-            "nom": "Superette Chahd",
-            "distance": 450
-        }
-      ]
+        "dab_index": 26,
+        "longitude": 10.109423211658838,
+        "latitude": 36.78382775204915,
+        "densite_100_metter": 1053.1395263671875,
+        "secteur": "Cit\u00e9 Essalama Zahrouni",
+        "ville": "Tunis",
+        "dab_near": 3,
+        "magasin": [
+            {
+                "nom": "Ben Ayed",
+                "distance": 300
+            },
+            {
+                "nom": "Superette Chahd",
+                "distance": 450
+            }
+        ]
     },
     {
-      "dab_index": 27,
-      "longitude": 10.222702662567192,
-      "latitude": 36.75615604740064,
-      "densite_100_metter": 5994.01611328125,
-      "secteur": "Ben Arous",
-      "ville": "Tunis",
-      "dab_near": 5,
-      "magasin": [
-        {
-          "nom": "Magasin Général Ben Arous",
-          "distance": 350
-        },
-        {
-            "nom": "Aziza Cité El Isken",
-            "distance": 1500
-        }
-      ]
+        "dab_index": 27,
+        "longitude": 10.222702662567192,
+        "latitude": 36.75615604740064,
+        "densite_100_metter": 5994.01611328125,
+        "secteur": "Ben Arous",
+        "ville": "Tunis",
+        "dab_near": 5,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Ben Arous",
+                "distance": 350
+            },
+            {
+                "nom": "Aziza Cit\u00e9 El Isken",
+                "distance": 1500
+            }
+        ]
     },
     {
-      "dab_index": 28,
-      "longitude": 10.169814772982637,
-      "latitude": 36.797399656880565,
-      "densite_100_metter": 10994.1708984375,
-      "secteur": "La Medina",
-      "ville": "Tunis",
-      "dab_near": 1,
-      "magasin": [
-        {
-          "nom": "Magasin Général",
-          "distance": 1800
-        },
-        {
-            "nom": "Monoprix Tunis Charles de Gaulle",
-            "distance": 2100
-        },
-        {
-            "nom": "Carrefour Express",
-            "distance": 3300
-        }
-      ]
+        "dab_index": 28,
+        "longitude": 10.169814772982637,
+        "latitude": 36.797399656880565,
+        "densite_100_metter": 10994.1708984375,
+        "secteur": "La Medina",
+        "ville": "Tunis",
+        "dab_near": 1,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 1800
+            },
+            {
+                "nom": "Monoprix Tunis Charles de Gaulle",
+                "distance": 2100
+            },
+            {
+                "nom": "Carrefour Express",
+                "distance": 3300
+            }
+        ]
     },
     {
-      "dab_index": 29,
-      "longitude": 10.169652571165928,
-      "latitude": 36.80289707647919,
-      "densite_100_metter": 11715.1484375,
-      "secteur": "El Hafsia",
-      "ville": "Tunis",
-      "dab_near": 0,
-      "magasin": [
-        {
-          "nom": "Monoprix Bab Souika",
-          "distance": 500
-        },
-        {
-            "nom": "Monoprix Tunis Charles de Gaulle",
-            "distance": 1400
-        },
-        {
-            "nom": "Magasin Général",
-            "distance": 1100
-        }
-
-      ]
+        "dab_index": 29,
+        "longitude": 10.169652571165928,
+        "latitude": 36.80289707647919,
+        "densite_100_metter": 11715.1484375,
+        "secteur": "El Hafsia",
+        "ville": "Tunis",
+        "dab_near": 0,
+        "magasin": [
+            {
+                "nom": "Monoprix Bab Souika",
+                "distance": 500
+            },
+            {
+                "nom": "Monoprix Tunis Charles de Gaulle",
+                "distance": 1400
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 1100
+            }
+        ]
     },
     {
-      "dab_index": 30,
-      "longitude": 10.230706558897545,
-      "latitude": 36.77054477991233,
-      "densite_100_metter": 3442.488037109375,
-      "secteur": "Megrine",
-      "ville": "Tunis",
-      "dab_near": 2,
-      "magasin": [
-        {
-          "nom": "Magasin Général Proxi Megrine",
-          "distance": 1000
-        }
-      ]
+        "dab_index": 30,
+        "longitude": 10.230706558897545,
+        "latitude": 36.77054477991233,
+        "densite_100_metter": 3442.488037109375,
+        "secteur": "Megrine",
+        "ville": "Tunis",
+        "dab_near": 2,
+        "magasin": [
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Proxi Megrine",
+                "distance": 1000
+            }
+        ]
     },
     {
-      "dab_index": 31,
-      "longitude": 10.260433877300121,
-      "latitude": 36.849164292698916,
-      "densite_100_metter": 1992.3297119140625,
-      "secteur": "El Aouina",
-      "ville": "Tunis",
-      "dab_near": 0,
-      "magasin": [
-        {
-          "nom": "Monoprix L'Aouina",
-          "distance": 1100
-        },
-        {
-            "nom": "Ben Yaghlane",
-            "distance": 1400
-        },
-        {
-            "nom": "Carrefour Express Farzdak L'Aouina",
-            "distance": 1900
-        },
-        {
-            "nom": "Magasin L'Aouina El Walid",
-            "distance": 1700
-        },
-        {
-            "nom": "Carrefour Market",
-            "distance": 1900
-        }
-      ]
+        "dab_index": 31,
+        "longitude": 10.260433877300121,
+        "latitude": 36.849164292698916,
+        "densite_100_metter": 1992.3297119140625,
+        "secteur": "El Aouina",
+        "ville": "Tunis",
+        "dab_near": 0,
+        "magasin": [
+            {
+                "nom": "Monoprix L'Aouina",
+                "distance": 1100
+            },
+            {
+                "nom": "Ben Yaghlane",
+                "distance": 1400
+            },
+            {
+                "nom": "Carrefour Express Farzdak L'Aouina",
+                "distance": 1900
+            },
+            {
+                "nom": "Magasin L'Aouina El Walid",
+                "distance": 1700
+            },
+            {
+                "nom": "Carrefour Market",
+                "distance": 1900
+            }
+        ]
     },
     {
         "dab_index": 32,
@@ -650,29 +649,29 @@
         "ville": "Tunis",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Carrefour Express",
-            "distance": 950
-          },
-          {
-            "nom": "Monoprix Ennasr 1",
-            "distance": 400
-          },
-          {
-            "nom": "Monoprix Ennasr 2",
-            "distance": 950
-          },
-          {
-            "nom": "Ben Yaghlane",
-            "distance": 950
-          },
-          {
-            "nom": "Carrefour Express",
-            "distance": 1000
-          }
+            {
+                "nom": "Carrefour Express",
+                "distance": 950
+            },
+            {
+                "nom": "Monoprix Ennasr 1",
+                "distance": 400
+            },
+            {
+                "nom": "Monoprix Ennasr 2",
+                "distance": 950
+            },
+            {
+                "nom": "Ben Yaghlane",
+                "distance": 950
+            },
+            {
+                "nom": "Carrefour Express",
+                "distance": 1000
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 33,
         "longitude": 10.207418880987877,
         "latitude": 36.85606390002881,
@@ -681,17 +680,17 @@
         "ville": "Tunis",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Monoprix Mini M Soukra",
-            "distance": 450
-          },
-          {
-            "nom": "Monoprix Soukra Square",
-            "distance": 2000
-          }
+            {
+                "nom": "Monoprix Mini M Soukra",
+                "distance": 450
+            },
+            {
+                "nom": "Monoprix Soukra Square",
+                "distance": 2000
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 34,
         "longitude": 10.207800924538828,
         "latitude": 36.73319061722877,
@@ -700,29 +699,29 @@
         "ville": "Tunis",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Carrefour Market",
-            "distance": 650
-          },
-          {
-            "nom": "Magazin Aziza",
-            "distance": 650
-          },
-          {
-            "nom": "Aziza Magazin",
-            "distance": 950
-          },
-          {
-            "nom": "Aziza",
-            "distance": 750
-          },
-          {
-            "nom": "Monoprix El Mourouj 1",
-            "distance": 900
-          }
+            {
+                "nom": "Carrefour Market",
+                "distance": 650
+            },
+            {
+                "nom": "Magazin Aziza",
+                "distance": 650
+            },
+            {
+                "nom": "Aziza Magazin",
+                "distance": 950
+            },
+            {
+                "nom": "Aziza",
+                "distance": 750
+            },
+            {
+                "nom": "Monoprix El Mourouj 1",
+                "distance": 900
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 35,
         "longitude": 10.170097417793027,
         "latitude": 36.698357290523674,
@@ -731,17 +730,17 @@
         "ville": "Tunis",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Magazin Aziza",
-            "distance": 1900
-          },
-          {
-            "nom": "Magazin Aziza",
-            "distance": 700
-          }
+            {
+                "nom": "Magazin Aziza",
+                "distance": 1900
+            },
+            {
+                "nom": "Magazin Aziza",
+                "distance": 700
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 36,
         "longitude": 10.184155900002061,
         "latitude": 36.807574274462155,
@@ -750,25 +749,25 @@
         "ville": "Tunis",
         "dab_near": 3,
         "magasin": [
-          {
-            "nom": "Magasin Général Le Passage",
-            "distance": 700
-          },
-          {
-            "nom": "Carrefour Market",
-            "distance": 900
-          },
-          {
-            "nom": "Carrefour Market La Fayette",
-            "distance": 850
-          },
-          {
-            "nom": "Monoprix Tunis Lafayette",
-            "distance": 1600
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Le Passage",
+                "distance": 700
+            },
+            {
+                "nom": "Carrefour Market",
+                "distance": 900
+            },
+            {
+                "nom": "Carrefour Market La Fayette",
+                "distance": 850
+            },
+            {
+                "nom": "Monoprix Tunis Lafayette",
+                "distance": 1600
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 37,
         "longitude": 10.269699088345282,
         "latitude": 36.84636903214005,
@@ -777,13 +776,13 @@
         "ville": "Tunis",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Ben Yaghlane Lac 2",
-            "distance": 650
-          }
+            {
+                "nom": "Ben Yaghlane Lac 2",
+                "distance": 650
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 38,
         "longitude": 10.191447082211099,
         "latitude": 36.84694944186751,
@@ -792,25 +791,25 @@
         "ville": "Tunis",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Carrefour Market",
-            "distance": 550
-          },
-          {
-            "nom": "Vitamine E Market",
-            "distance": 2100
-          },
-          {
-            "nom": "Smile Market",
-            "distance": 2100
-          },
-          {
-            "nom": "Monoprix Menzah 1 Saadi",
-            "distance": 900
-          }
+            {
+                "nom": "Carrefour Market",
+                "distance": 550
+            },
+            {
+                "nom": "Vitamine E Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Smile Market",
+                "distance": 2100
+            },
+            {
+                "nom": "Monoprix Menzah 1 Saadi",
+                "distance": 900
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 39,
         "longitude": 10.201113647240772,
         "latitude": 36.842051015932896,
@@ -819,28 +818,28 @@
         "ville": "Tunis",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Magasin Général",
-            "distance": 1000
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 1000
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 40,
         "longitude": 9.843717447240769,
         "latitude": 36.82728340830032,
         "densite_100_metter": 137.00460815429688,
-        "secteur": "Cité 14 janvier",
+        "secteur": "Cit\u00e9 14 janvier",
         "ville": "Tunis",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "null",
-            "distance": 0
-          }
+            {
+                "nom": "null",
+                "distance": 0
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 41,
         "longitude": 10.269680758897545,
         "latitude": 36.767386294572795,
@@ -849,13 +848,13 @@
         "ville": "Tunis",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Magasin Général Rades",
-            "distance": 50
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Rades",
+                "distance": 50
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 42,
         "longitude": 10.296850229449802,
         "latitude": 36.74335532124034,
@@ -864,13 +863,13 @@
         "ville": "Tunis",
         "dab_near": 0,
         "magasin": [
-          {
-            "nom": "Magasin Général Ennakhil",
-            "distance": 1300
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Ennakhil",
+                "distance": 1300
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 43,
         "longitude": 10.33184454724077,
         "latitude": 36.88430694510933,
@@ -879,21 +878,21 @@
         "ville": "Tunis",
         "dab_near": 3,
         "magasin": [
-          {
-            "nom": "Carrefour Express",
-            "distance": 28
-          },
-          {
-            "nom": "Monoprix La Marsa Zéphyr",
-            "distance": 280
-          },
-          {
-            "nom": "Monoprix La Marsa Plage",
-            "distance": 450
-          }
+            {
+                "nom": "Carrefour Express",
+                "distance": 28
+            },
+            {
+                "nom": "Monoprix La Marsa Z\u00e9phyr",
+                "distance": 280
+            },
+            {
+                "nom": "Monoprix La Marsa Plage",
+                "distance": 450
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 44,
         "longitude": 10.604886924794501,
         "latitude": 35.8026761137141,
@@ -902,40 +901,40 @@
         "ville": "Sousse",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Aziza",
-            "distance": 300
-          },
-          {
-              "nom": "Carrefour Market",
-              "distance": 500
-          }
+            {
+                "nom": "Aziza",
+                "distance": 300
+            },
+            {
+                "nom": "Carrefour Market",
+                "distance": 500
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 45,
         "longitude": 10.637750988956892,
         "latitude": 35.82663632070178,
         "densite_100_metter": 4533.38134765625,
-        "secteur": "Médina",
+        "secteur": "M\u00e9dina",
         "ville": "Sousse",
         "dab_near": 0,
         "magasin": [
-          {
-            "nom": "Magasin Général",
-            "distance": 800
-          },
-          {
-              "nom": "Monoprix Sousse Gloulou",
-              "distance": 1300
-          },
-          {
-              "nom": "Carrefour Trocadéro",
-              "distance": 1300
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 800
+            },
+            {
+                "nom": "Monoprix Sousse Gloulou",
+                "distance": 1300
+            },
+            {
+                "nom": "Carrefour Trocad\u00e9ro",
+                "distance": 1300
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 46,
         "longitude": 10.640418558897544,
         "latitude": 35.831152747536514,
@@ -944,17 +943,17 @@
         "ville": "Sousse",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Magasin Général",
-            "distance": 650
-          },
-          {
-              "nom": "Magasin Général Corniche",
-              "distance": 1400
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral",
+                "distance": 650
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Corniche",
+                "distance": 1400
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 47,
         "longitude": 10.635315394479477,
         "latitude": 35.83395740149852,
@@ -963,25 +962,25 @@
         "ville": "Sousse",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Magasin Général Corniche",
-            "distance": 1000
-          },
-          {
-              "nom": "Aziza",
-              "distance": 700
-          },
-          {
-              "nom": "Monoprix Sousse Trocadéro",
-              "distance": 750
-          },
-          {
-              "nom": "Carrefour Trocadéro",
-              "distance": 600
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Corniche",
+                "distance": 1000
+            },
+            {
+                "nom": "Aziza",
+                "distance": 700
+            },
+            {
+                "nom": "Monoprix Sousse Trocad\u00e9ro",
+                "distance": 750
+            },
+            {
+                "nom": "Carrefour Trocad\u00e9ro",
+                "distance": 600
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 48,
         "longitude": 10.597144774242079,
         "latitude": 35.85922600161997,
@@ -990,56 +989,56 @@
         "ville": "Sousse",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Aziza",
-            "distance": 290
-          },
-          {
-              "nom": "Magasin Aziza",
-              "distance": 1100
-          },
-          {
-              "nom": "Monoprix Kantaoui",
-              "distance": 1800
-          },
-          {
-              "nom": "Carrefour Express Khézama",
-              "distance": 1000
-          } 
+            {
+                "nom": "Aziza",
+                "distance": 290
+            },
+            {
+                "nom": "Magasin Aziza",
+                "distance": 1100
+            },
+            {
+                "nom": "Monoprix Kantaoui",
+                "distance": 1800
+            },
+            {
+                "nom": "Carrefour Express Kh\u00e9zama",
+                "distance": 1000
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 49,
         "longitude": 10.63110141779303,
         "latitude": 35.83200481647174,
         "densite_100_metter": 4498.2255859375,
-        "secteur": "Cité Jawhara",
+        "secteur": "Cit\u00e9 Jawhara",
         "ville": "Sousse",
         "dab_near": 3,
         "magasin": [
-          {
-            "nom": "Monoprix Sousse Trocadéro",
-            "distance": 150
-          },
-          {
-              "nom": "Carrefour Trocadéro",
-              "distance": 700
-          },
-          {
-              "nom": "Monoprix Sousse Gloulou",
-              "distance": 1000
-          },
-          {
-              "nom": "Carrefour Market Jawhara",
-              "distance": 1300
-          },
-          {
-              "nom": "Magasin Général Corniche",
-              "distance": 1700
-          }
+            {
+                "nom": "Monoprix Sousse Trocad\u00e9ro",
+                "distance": 150
+            },
+            {
+                "nom": "Carrefour Trocad\u00e9ro",
+                "distance": 700
+            },
+            {
+                "nom": "Monoprix Sousse Gloulou",
+                "distance": 1000
+            },
+            {
+                "nom": "Carrefour Market Jawhara",
+                "distance": 1300
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Corniche",
+                "distance": 1700
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 50,
         "longitude": 10.635102135583994,
         "latitude": 35.83362832165123,
@@ -1048,25 +1047,25 @@
         "ville": "Sousse",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Magasin Général Corniche",
-            "distance": 1100
-          },
-          {
-              "nom": "Monoprix Sousse Trocadéro",
-              "distance": 700
-          },
-          {
-              "nom": "Carrefour Trocadéro",
-              "distance": 550
-          },
-          {
-              "nom": "Aziza",
-              "distance": 650
-          }
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Corniche",
+                "distance": 1100
+            },
+            {
+                "nom": "Monoprix Sousse Trocad\u00e9ro",
+                "distance": 700
+            },
+            {
+                "nom": "Carrefour Trocad\u00e9ro",
+                "distance": 550
+            },
+            {
+                "nom": "Aziza",
+                "distance": 650
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 51,
         "longitude": 10.604729317793028,
         "latitude": 35.86768208114539,
@@ -1075,13 +1074,13 @@
         "ville": "Sousse",
         "dab_near": 2,
         "magasin": [
-          {
-            "nom": "Aziza",
-            "distance": 550
-          }
+            {
+                "nom": "Aziza",
+                "distance": 550
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 52,
         "longitude": 10.568293758897548,
         "latitude": 35.865655968217254,
@@ -1090,13 +1089,13 @@
         "ville": "Sousse",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Carrefour",
-            "distance": 1300
-          }
+            {
+                "nom": "Carrefour",
+                "distance": 1300
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 53,
         "longitude": 10.779511293659716,
         "latitude": 34.787267947377046,
@@ -1105,13 +1104,13 @@
         "ville": "Sfax",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Géant Market Sfax",
-            "distance": 350
-          }
+            {
+                "nom": "G\u00e9ant Market Sfax",
+                "distance": 350
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 54,
         "longitude": 10.757140926144041,
         "latitude": 34.741338531080494,
@@ -1120,21 +1119,21 @@
         "ville": "Sfax",
         "dab_near": 0,
         "magasin": [
-          {
-            "nom": "Carrefour Market Sfax El Jadida",
-            "distance": 75
-          },
-          {
-              "nom": "Monoprix Sfax",
-              "distance": 700
-          },
-          {
-              "nom": "Aziza",
-              "distance": 1400
-          }
+            {
+                "nom": "Carrefour Market Sfax El Jadida",
+                "distance": 75
+            },
+            {
+                "nom": "Monoprix Sfax",
+                "distance": 700
+            },
+            {
+                "nom": "Aziza",
+                "distance": 1400
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 55,
         "longitude": 10.763068545490048,
         "latitude": 34.733139683166016,
@@ -1143,17 +1142,17 @@
         "ville": "Sfax",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Monorprix Sfax Centre",
-            "distance": 600
-          },
-          {
-              "nom": "Monorprix Sfax",
-              "distance": 1400
-          }
+            {
+                "nom": "Monorprix Sfax Centre",
+                "distance": 600
+            },
+            {
+                "nom": "Monorprix Sfax",
+                "distance": 1400
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 56,
         "longitude": 10.753497082618175,
         "latitude": 34.73353204382809,
@@ -1162,13 +1161,13 @@
         "ville": "Sfax",
         "dab_near": 3,
         "magasin": [
-          {
-            "nom": "Monorprix Sfax Centre",
-            "distance": 1800
-          }
+            {
+                "nom": "Monorprix Sfax Centre",
+                "distance": 1800
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 57,
         "longitude": 10.742298189428949,
         "latitude": 34.79894038303011,
@@ -1177,13 +1176,13 @@
         "ville": "Sfax",
         "dab_near": 1,
         "magasin": [
-          {
-            "nom": "Carrefour Market",
-            "distance": 600
-          }
+            {
+                "nom": "Carrefour Market",
+                "distance": 600
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 58,
         "longitude": 10.822141846068686,
         "latitude": 35.77025508588869,
@@ -1192,25 +1191,25 @@
         "ville": "Monastir",
         "dab_near": 4,
         "magasin": [
-          {
-            "nom": "Aziza",
-            "distance": 600
-          },
-          {
-              "nom": "Aziza",
-              "distance": 1100
-          },
-          {
-              "nom": "Monoprix Monastir",
-              "distance": 1100
-          },
-          {
-              "nom": "Magasin Général Monastir",
-              "distance": 800
-          }
+            {
+                "nom": "Aziza",
+                "distance": 600
+            },
+            {
+                "nom": "Aziza",
+                "distance": 1100
+            },
+            {
+                "nom": "Monoprix Monastir",
+                "distance": 1100
+            },
+            {
+                "nom": "Magasin G\u00e9n\u00e9ral Monastir",
+                "distance": 800
+            }
         ]
-      },
-      {
+    },
+    {
         "dab_index": 59,
         "longitude": 10.832086281300468,
         "latitude": 35.77355421964674,
@@ -1233,5 +1232,4 @@
           }
         ]
       }
-  ]
-  
+]

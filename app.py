@@ -169,13 +169,30 @@ def city(ville):
     else:
         return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
 
-@app.route('/dab/<int:dab_index>')
+def save_data(data):
+    with open('global.json', 'w') as file:
+        json.dump(data, file, indent=4)
+
+@app.route('/dab/<int:dab_index>', methods=['GET', 'POST'])
 def dab_details(dab_index):
     if 'email' in session:
         data = load_data()
         dab_data = next((item for item in data if item["dab_index"] == dab_index), None)
         if not dab_data:
             return "DAB not found", 404
+
+        if request.method == 'POST' and 'delete' in request.form:
+            if session.get('role') == 'Décideur':
+                data.remove(dab_data)
+                # Mettre à jour les indices des autres DABs
+                for index, dab in enumerate(data):
+                    dab['dab_index'] = index + 1
+
+                # Sauvegarder les modifications dans le fichier JSON
+                with open('global.json', 'w') as file:
+                    json.dump(data, file, indent=4)
+
+                return redirect(url_for('home'))
 
         # Créer une carte avec un marqueur pour le DAB sélectionné
         map = folium.Map(location=[dab_data['latitude'], dab_data['longitude']], zoom_start=15)
@@ -186,9 +203,10 @@ def dab_details(dab_index):
         ).add_to(map)
         map_html = map._repr_html_()
 
-        return render_template('dab.html', gab_data=dab_data, map_html=map_html, email = session['email'])
+        return render_template('dab.html', gab_data=dab_data, map_html=map_html, email=session['email'], role=session.get('role'))
     else:
         return redirect(url_for('login'))  # Rediriger vers la page de connexion si l'utilisateur n'est pas connecté
+
 
 @app.route('/logout')
 def logout():
