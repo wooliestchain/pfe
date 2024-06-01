@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Valider DAB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        #map {
+            width: 50%;
+            height: 600px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        #details {
+            width: 50%;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #333;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        #details h2 {
+            color: #333;
+            text-align: center;
+            margin-top: 0;
+        }
+
+        #details p {
+            margin: 10px 0;
+        }
+
+        #details ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        #details ul li {
+            margin-left: 20px;
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Valider DAB</h1>
+    <div id="container">
+        <div id="map">
+            <iframe src="{{ url_for('static', filename='map.html') }}" style="width: 100%; height: 100%; border: none;"></iframe>
+        </div>
+        <div id="details">
+            <h2>Détails du DAB</h2>
+            <p><strong>Secteur:</strong> {{ dab.secteur }}</p>
+            <p><strong>Longitude:</strong> {{ dab.longitude }}</p>
+            <p><strong>Latitude:</strong> {{ dab.latitude }}</p>
+            <p><strong>Densité (100 mètres):</strong> {{ dab.densite_100_metter }}</p>
+            <p><strong>Ville:</strong> {{ dab.ville }}</p>
+            <p><strong>DAB proche:</strong> {{ dab.dab_near }}</p>
+            <h3>Magasins</h3>
+            <ul>
+                {% for magasin in dab.magasin %}
+                    <li>{{ magasin.nom }} ({{ magasin.distance }} mètres)</li>
+                {% endfor %}
+            </ul>
+            <p><strong>Efficacité:</strong> {{ dab.efficacite }}</p>
+            <p><strong>Distance moyenne aux magasins:</strong> {{ dab.distance_mean }}</p>
+            <form method="POST">
+                <button type="submit" name="action" value="Modifier">Modifier</button>
+                <button type="submit" name="action" value="Valider">Valider</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

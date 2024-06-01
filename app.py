@@ -47,10 +47,9 @@ def login():
 
         # Requête pour vérifier l'email et le mot de passe, ainsi que l'existence d'un jeton valide
         query = """
-        SELECT u.user_id, u.email, u.password, u.role
-        FROM users u
-        JOIN token t ON u.user_id = t.user_id
-        WHERE u.email = %s AND t.token_id IS NOT NULL
+        SELECT user_id, email, password, role, jeton
+        FROM users
+        WHERE email = %s AND jeton IS NOT NULL AND jeton != ''
         """
         cur.execute(query, (email,))
         user = cur.fetchone()
