@@ -1,0 +1,72 @@
+body{
+    background-image: url("images/uv_back.jpg");
+    background-size: cover;
+    font-family: 'Roboto', sans-serif, 'historical-ligatures';
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    display: block;
+}
+
+main form{
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-top: 200px;
+    box-shadow: 0 4px 8px 0 rgba(28, 118, 222, 0.2);
+    border: #bd7265;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: #555555;
+
+}
+
+label{
+    text-decoration: #b1cec1;
+    color: #504d50;
+    font-size: 17px;
+}
+input[type=email], input[type=password]{
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 20px;
+    font-size: 17px;
+}
+input[type=email]:focus, input[type=password]:focus {
+    outline-color: #edeeef;
+}
+
+input[type=email]:invalid, input[type=password]:invalid{
+    border:  solid red;
+}
+
+input[type=email]:valid, input[type=password]:valid{
+    border:  solid cornflowerblue;
+}
+
+.same_pass{
+    text-decoration: #DA1414;
+    border-color: #f32f2f;
+    background-color: #f87777;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+input[type=submit]{
+    border-radius: 4px 4px 4px 4px;
+    color: #f6f8f8;
+    background-color: #095bf3;
+    margin-top: 15px;
+    width: 15%;
+    height: 30px;
+}
+
+h4 a{
+    text-decoration: none;
+    color: #095bf3;
+}

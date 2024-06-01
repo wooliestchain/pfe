@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif, 'historical-ligatures';
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+    display: block;
+}
+
+section{
+    position: relative;
+    margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(28, 118, 222, 0.2);
+    border: #bd7265;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 20px;
+}
+.curent_pg, .next_pg{
+    background-color: #24a0ed;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+    color: #d3d3bf;
+}
+.page{
+    margin-top: 15px;
+    margin-left: 700px;
+}
+
+table thead tr th, table tbody tr td{
+    box-shadow: 0 0px 0px 2px rgba(0, 0, 9, 0.2);
+    margin-left: 5px;
+    width: 300px;
+    text-align: center;
+
+}
+table tbody tr td .token{
+    text-decoration: none;
+}
+
+td .token{
+    text-decoration: none;
+}
+table{
+    right: 150px;
+}
+
+table{
+    margin-left: 100px;
+}
