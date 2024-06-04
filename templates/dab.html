@@ -79,9 +79,12 @@
             <li><a href="">À propos</a></li>
             <li><a href="#">Contact</a></li>
             <li><a href="{{ url_for('dab') }}">Carte</a></li>
-            {% if role == 'Décideur' %}
+            {% if session['role'] == 'Décideur' %}
                 <li><a href="{{ url_for('ajouter') }}">Ajouter</a></li>
-                <li><a href="{{ url_for('modifier') }}">Modifier</a></li>
+            {% endif %}
+            {% if session['role'] == 'Admin' %}
+                <li><a href="{{ url_for('ajouter') }}">Ajouter</a></li>
+                <li><a href="{{ url_for('admin') }}">Admin</a></li>
             {% endif %}
         </ul>
         <ul>
