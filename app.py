@@ -49,7 +49,7 @@ def login():
         query = """
         SELECT user_id, email, password, role, jeton
         FROM users
-        WHERE email = %s AND jeton IS NOT NULL AND jeton != ''
+        WHERE email = %s
         """
         cur.execute(query, (email,))
         user = cur.fetchone()
@@ -318,9 +318,9 @@ def valider(dab_index):
 
 
 @app.route('/modifier')
-def modifier():
-    if 'email' in session and session.get('role') == 'Décideur':
-        return render_template('modifier.html')
+def admin():
+    if 'email' in session and session.get('role') == 'Administrateur':
+        return render_template('admin.html')
     else:
         return redirect(url_for('home'))
 
