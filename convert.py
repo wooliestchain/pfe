@@ -37,7 +37,7 @@ def convert_to_geojson(json_file, geojson_file):
 
 
 # Chemins des fichiers
-json_file = 'global.json'  # Remplacer par le nom réel du fichier JSON
+json_file = 'global.json'
 geojson_file = 'output.geojson'
 
 # Conversion
